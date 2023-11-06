@@ -42,7 +42,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     #posts-filters-section,
     #post-cards-section {
         width: 100%!important;
