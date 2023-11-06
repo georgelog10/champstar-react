@@ -4,7 +4,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .register-section-photo {
         display: none;
     }

@@ -70,7 +70,7 @@
     color: black!important;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .login-form-section {
         height: 100vh;
         padding: 0 20px;
