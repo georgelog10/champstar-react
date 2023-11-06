@@ -38,7 +38,7 @@
 @media (min-width: 1024px) {
     .mobile-filter-button,
     .mobile-filters {
-        display: none;
+        display: none!important;
     }
 }
 
