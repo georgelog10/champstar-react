@@ -21,6 +21,7 @@
 
 .contact-container-1 h1 {
     font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .contact-container-1 p {
@@ -70,7 +71,8 @@
 @media (max-width: 500px) {
     #contact-form-section {
         max-width: 100%;
-        padding: 30px 20px!important;
+        height: 115vh;
+        padding: 160px 20px 70px!important;
         flex-direction: column;
     }
 }
