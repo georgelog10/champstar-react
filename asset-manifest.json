@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/champstar-react/static/css/main.f9821c50.css",
+    "main.js": "/champstar-react/static/js/main.690fcf93.js",
+    "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
+    "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
+    "static/media/MobileApp.png": "/champstar-react/static/media/MobileApp.945e27578e5782776f80.png",
+    "static/media/luca-bravo-9l_326FISzk-unsplash.png": "/champstar-react/static/media/luca-bravo-9l_326FISzk-unsplash.f8e8840fb29e8d28709f.png",
+    "static/media/andras-vas-Bd7gNnWJBkU-unsplash.jpg": "/champstar-react/static/media/andras-vas-Bd7gNnWJBkU-unsplash.de0bec76b5bbf1cffefe.jpg",
+    "static/media/chris-ried-ieic5Tq8YMk-unsplash.jpg": "/champstar-react/static/media/chris-ried-ieic5Tq8YMk-unsplash.77ec8b2e00051c414e03.jpg",
+    "static/media/annie-spratt-QckxruozjRg-unsplash.jpg": "/champstar-react/static/media/annie-spratt-QckxruozjRg-unsplash.2da5c5d2f6f3a11b5908.jpg",
+    "static/media/SeverinBumbaruLogofinal1.3.png": "/champstar-react/static/media/SeverinBumbaruLogofinal1.3.871748697101ff2ed466.png",
+    "static/media/logo-removebg-preview.png": "/champstar-react/static/media/logo-removebg-preview.e0d694f7a6c9494165d6.png",
+    "static/media/Romanian-google-play-badge.png": "/champstar-react/static/media/Romanian-google-play-badge.bbac08ab162b98789743.png",
+    "static/media/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg": "/champstar-react/static/media/mohamed-nohassi--0xMiYQmk8g-unsplash.37cbdeede49e6f05e54c.jpg",
+    "static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.png": "/champstar-react/static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.4bd6cce3c2314782106e.png",
+    "index.html": "/champstar-react/index.html",
+    "main.f9821c50.css.map": "/champstar-react/static/css/main.f9821c50.css.map",
+    "main.690fcf93.js.map": "/champstar-react/static/js/main.690fcf93.js.map",
+    "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9821c50.css",
+    "static/js/main.690fcf93.js"
+  ]
+}
