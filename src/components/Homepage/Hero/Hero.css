@@ -41,7 +41,7 @@
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
-        padding: 150px 20px 0;
+        padding: 150px 20px 70px;
         height: 100%;
         background-size: 100vh;
         gap: 50px;
