@@ -35,8 +35,9 @@
     color: rgb(0, 86, 134);
 }
 
-@media (min-width: 1200px) {
-    .mobile-filter-button {
+@media (min-width: 1024px) {
+    .mobile-filter-button,
+    .mobile-filters {
         display: none;
     }
 }
