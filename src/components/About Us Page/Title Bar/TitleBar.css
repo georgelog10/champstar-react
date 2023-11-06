@@ -1,0 +1,20 @@
+#about-us-title-bar {
+    background: url('../../../assets/giordano-rossoni-LqBCBH7b1k8-unsplash.png') no-repeat center;
+    height: 60vh;
+    padding: 100px 0 0;
+    margin-top: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us-title-bar .about-us-text {
+    text-align: center;
+    gap: 0;
+    
+}
+
+#about-us-title-bar .about-us-text h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}

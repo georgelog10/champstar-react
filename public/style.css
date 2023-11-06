@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Onest';
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.login-sections,
+.register-sections,
+#dashboard,
+.posts-section {
+    display: flex;
+}
+
+#dashboard {
+    padding: 20px;
+    gap: 50px;
+}
+
+.posts-section {
+    padding: 30px 120px;
+    gap: 50px;
+}
+
+@media (max-width: 425px) {
+    #dashboard {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .posts-section {
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+}

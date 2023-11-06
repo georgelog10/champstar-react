@@ -1,0 +1,76 @@
+#contact-form-section {
+    height: 100vh;
+    margin: 0 auto;
+    padding: 100px 120px 0;
+    background: url('../../../assets/luca-bravo-9l_326FISzk-unsplash.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -120px;
+}
+
+.contact-container-1 {
+    color: white;
+}
+
+.contact-container-1 svg {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container-1 h1 {
+    font-size: 2.5rem;
+}
+
+.contact-container-1 p {
+    font-size: 1.3rem;
+}
+
+.contact-container-2 {
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.form-row-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row-1 .col {
+    width: 50%;
+}
+
+.col input,
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #F3F4F8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-submit {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    background: #178FD9;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+    #contact-form-section {
+        max-width: 100%;
+        padding: 30px 20px!important;
+        flex-direction: column;
+    }
+}
