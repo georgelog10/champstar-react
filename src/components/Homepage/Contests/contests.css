@@ -24,6 +24,7 @@
 
 .contests-text h1 {
     font-size: 2.2rem;
+    font-weight: 600;
 }
 
 .contests-button {
@@ -56,13 +57,13 @@
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
     .contests-images {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .contests-images {
         grid-template-columns: 1fr;
     }
