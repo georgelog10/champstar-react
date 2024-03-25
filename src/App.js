@@ -12,7 +12,7 @@ import UserProfile from './pages/UserProfile';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route index element={<Home />} />
           <Route path='/despre-noi' element={<About />} />
