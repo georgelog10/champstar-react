@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/champstar-react/static/css/main.e611b57b.css",
-    "main.js": "/champstar-react/static/js/main.b78d8fc2.js",
+    "main.css": "/champstar-react/static/css/main.5b2b2a03.css",
+    "main.js": "/champstar-react/static/js/main.e1d0b627.js",
     "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
     "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
+    "static/media/about.jpg": "/champstar-react/static/media/about.874b463a9e45c7159e97.jpg",
+    "static/media/newsletter.jpg": "/champstar-react/static/media/newsletter.f424ef04169363f67c05.jpg",
     "static/media/MobileApp.png": "/champstar-react/static/media/MobileApp.945e27578e5782776f80.png",
     "static/media/luca-bravo-9l_326FISzk-unsplash.png": "/champstar-react/static/media/luca-bravo-9l_326FISzk-unsplash.f8e8840fb29e8d28709f.png",
     "static/media/andras-vas-Bd7gNnWJBkU-unsplash.jpg": "/champstar-react/static/media/andras-vas-Bd7gNnWJBkU-unsplash.de0bec76b5bbf1cffefe.jpg",
     "static/media/chris-ried-ieic5Tq8YMk-unsplash.jpg": "/champstar-react/static/media/chris-ried-ieic5Tq8YMk-unsplash.77ec8b2e00051c414e03.jpg",
-    "static/media/annie-spratt-QckxruozjRg-unsplash.jpg": "/champstar-react/static/media/annie-spratt-QckxruozjRg-unsplash.2da5c5d2f6f3a11b5908.jpg",
     "static/media/SeverinBumbaruLogofinal1.3.png": "/champstar-react/static/media/SeverinBumbaruLogofinal1.3.871748697101ff2ed466.png",
+    "static/media/Google__G__logo.svg.png": "/champstar-react/static/media/Google__G__logo.svg.b2571f1fce8c422235c2.png",
     "static/media/logo-removebg-preview.png": "/champstar-react/static/media/logo-removebg-preview.e0d694f7a6c9494165d6.png",
     "static/media/Romanian-google-play-badge.png": "/champstar-react/static/media/Romanian-google-play-badge.bbac08ab162b98789743.png",
     "static/media/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg": "/champstar-react/static/media/mohamed-nohassi--0xMiYQmk8g-unsplash.37cbdeede49e6f05e54c.jpg",
     "static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.png": "/champstar-react/static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.4bd6cce3c2314782106e.png",
     "index.html": "/champstar-react/index.html",
-    "main.e611b57b.css.map": "/champstar-react/static/css/main.e611b57b.css.map",
-    "main.b78d8fc2.js.map": "/champstar-react/static/js/main.b78d8fc2.js.map",
+    "main.5b2b2a03.css.map": "/champstar-react/static/css/main.5b2b2a03.css.map",
+    "main.e1d0b627.js.map": "/champstar-react/static/js/main.e1d0b627.js.map",
     "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e611b57b.css",
-    "static/js/main.b78d8fc2.js"
+    "static/css/main.5b2b2a03.css",
+    "static/js/main.e1d0b627.js"
   ]
 }
