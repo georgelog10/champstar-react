@@ -2,10 +2,7 @@
     height: 105vh;
     background: linear-gradient(140deg, rgba(215,2,15,1) 0%, rgba(110,1,134,1) 60%, rgba(17,0,240,1) 100%);
     margin-top: -120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 120px 0;
+    padding-top: 100px;
 }
 
 .hero-text,
@@ -15,27 +12,13 @@
 
 .hero-text h1 {
     font-size: 50px;
-    color: white;
-    font-weight: 600;
-    line-height: 120%;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    color: white;
-    font-weight: 400;
-    line-height: 140%;
-    margin-bottom: 2.5rem;
 }
 
 .hero-button {
-    border: none;
     font-size: 16px;
     padding: 15px 20px;
     background: #178FD9;
     border-radius: 10px;
-    color: white;
-    font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -52,12 +35,7 @@
         width: 100%;
     }
 
-    .hero-image {
-        order: 0;
-    }
-
     .hero-text {
-        order: 1;
         text-align: center;
     }
 }

@@ -61,6 +61,7 @@
 
 .pagination {
     float: right;
+    gap: 10px;
 }
 
 .pagination .page-item .page-link {
@@ -74,7 +75,7 @@
     background: rgb(0,86,134);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     #dashboard-cards {
         width: 100%;
     }

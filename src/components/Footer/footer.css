@@ -1,29 +1,12 @@
 .footer-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 120px;
     background-color: #000017;
 }
 
-.copyright {
-    display: flex;
-    align-items: center;
-}
-
-.copyright p {
-    color: white;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
 .social-icons {
-    display: flex;
     gap: 20px;
-    align-items: center;
 }
 
 .social-link {
-    color: white;
     font-size: 20px;
 }
 
@@ -32,11 +15,6 @@
         padding: 20px;
         flex-direction: column;
         gap: 20px;
-    }
-
-    .copyright,
-    .social-icons {
-        justify-content: center;
     }
 
     .copyright p {

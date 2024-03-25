@@ -1,54 +1,10 @@
-#newsletter-section {
-    padding: 30px 120px;
-}
-
 .newsletter {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(140deg, rgba(215,2,15,1) 0%, rgba(110,1,134,1) 60%, rgba(17,0,240,1) 100%);
-    border-radius: 20px;
-    padding: 60px;
-    gap: 100px;
-}
-
-.newsletter-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: #ffffff;
-}
-
-.newsletter-text h1 {
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-
-.newsletter-form {
-    width: 50%;
-}
-
-.newsletter-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.email {
-    border: none;
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 10px;
+    background: url('../../../assets/newsletter.jpg') center 100% no-repeat;
 }
 
 .newsletter-submit {
-    border: none;
     font-size: 16px;
-    padding: 10px;
     background: #178FD9;
-    border-radius: 10px;
-    color: white;
-    font-weight: 700;
     cursor: pointer;
 }
 

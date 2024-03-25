@@ -15,8 +15,26 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 425px) {
+.county-filter *,
+.domain-filter *,
+.participants-number-filter * {
+    font-family: 'Onest'!important;
+}
+
+.county-filter h5,
+.domain-filter h5,
+.participants-number-filter h5 {
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
     #filters-section {
         width: 100%;
+    }
+
+    .county-filter,
+    .domain-filter,
+    .participants-number-filter {
+        display: none;
     }
 }

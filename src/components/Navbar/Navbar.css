@@ -1,95 +1,37 @@
-.navbar {
-    margin: 0 auto;
-    padding: 20px 120px;
-    background: rgba(0, 0, 0, 0.10);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo {
-    max-width: 60px;
-}
-
-.desktopMenuItem {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.nav-buttons {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
+.desktopMenuItem,
 .loginBtn {
-    border: none;
     font-size: 16px;
-    color: white;
-    font-weight: 700;
     cursor: pointer;
 }
 
 .registerBtn {
-    border: none;
     font-size: 16px;
     padding: 15px 20px;
     background: #178FD9;
-    border-radius: 10px;
-    color: white;
-    font-weight: 700;
     cursor: pointer;
 }
 
-@media (min-width: 1025px) {
-    .mobile-menu,
-    .menu-button {
-        display: none;
+@media screen and (min-width: 769px) {
+    .menu-button,
+    .mobile-menu {
+        display: none!important;
     }
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 20px;
-    }
-
-    .nav-buttons,
-    .nav-menu .desktopMenuItem {
-        display: none;
-    }
-
     .menu-button {
-        color: white;
-        border: none;
         font-size: 1.7rem;
     }
 
     .mobile-menu {
-        position: fixed;
         top: 0;
         right: -350px;
-        background-color: white;
         width: 350px;
-        height: 100%;
         z-index: 1;
         box-shadow: -3px 0px 4px -2px;
         padding: 24px;
-        flex-direction: column;
         overflow-y: hidden;
         transition: right 0.5s;
-        display: flex;
-        justify-content: space-between;
     }
 
     .mobile-menu.open {
@@ -97,47 +39,19 @@
     }
 
     .mobile-menu .menu-items {
-        display: flex;
-        flex-direction: column;
         gap: 5px;
-        padding: 0;
-        margin-bottom: 0;
-        text-align: center;
     }
 
     .mobile-menu .sign-buttons {
-        display: flex;
-        flex-direction: column;
         gap: 1.5rem;
-        padding: 0;
-        margin-bottom: 0;
-        text-align: center;
     }
 
-    .mobile-menu .menu-items li,
-    .mobile-menu .sign-buttons li {
-        list-style-type: none;
-    }
-
-    .mobile-menu .menu-items li a {
-        font-weight: 600;
-        color: black;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-
+    .mobile-menu .menu-items li a,
     .mobile-menu .sign-buttons li a {
         font-size: 18px;
     }
 
-    .mobile-menu .sign-buttons .loginBtn {
-        color: black;
-    } 
-
     .close-button {
-        border: none;
-        text-align: right;
         font-size: 1.6rem;
     }
 }
-

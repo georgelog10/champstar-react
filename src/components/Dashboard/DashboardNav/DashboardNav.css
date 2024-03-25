@@ -1,46 +1,5 @@
 .dashboard-navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
     background: linear-gradient(90deg, rgb(0,86,134) 0%, rgb(1,158,244) 100%);
-}
-
-.nav-column-1 {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 50%;
-}
-
-.nav-column-1 a {
-    height: 60px;
-}
-
-.nav-column-1 .search {
-    width: 40%;
-}
-
-.nav-column-2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    width: 50%;
-}
-
-.nav-column-2 p {
-    margin-bottom: 0;
-}
-
-.profile {
-    color: white;
-}
-
-.profile-image {
-    width: 30px;
-    border-radius: 90px;
-    margin-right: 5px;
 }
 
 #basic-button {
@@ -50,4 +9,26 @@
 
 .menu-icon {
     margin-right: 10px;
+}
+
+@media (min-width: 1025px) {
+    .mobile-search {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile,
+    #basic-button,
+    .search-bar {
+        display: none;
+    }
+
+    .search-icon {
+        font-size: 20px;
+    }
+
+    .nav-column-1 {
+        width: auto;
+    }
 }

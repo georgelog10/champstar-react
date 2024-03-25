@@ -1,10 +1,4 @@
-#post-cards-section {
-    width: 75%;
-}
-
-#post-cards-section .card {
-    position: relative;
-    border: none;
+.post-cards-section .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: url('../../../assets/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg');
     background-repeat: no-repeat;
@@ -12,7 +6,7 @@
     height: 350px;
 }
 
-#post-cards-section .card::before {
+.post-cards-section .card::before {
     content: '';
     position: absolute;
     border-radius: var(--bs-border-radius);
@@ -24,27 +18,15 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#post-cards-section .card .card-body {
-    position: absolute;
+.post-cards-section .card .card-body {
     bottom: 0;
-    width: 100%;
-    padding: 20px;
-}
-
-.post-card-meta {
-    display: flex;
-    justify-content: space-between;
 }
 
 .post-card-category,
 .post-card-meta {
-    margin-bottom: 0.3rem;
     font-size: 14px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
 }
 
 .post-card-title {
     font-size: 30px;
-    color: white;
 }

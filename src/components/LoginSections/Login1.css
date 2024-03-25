@@ -1,7 +1,5 @@
 .login-section-photo img {
-    height: 100vh;
     width: 50vw;
-    object-fit: cover;
 }
 
 @media (max-width: 500px) {

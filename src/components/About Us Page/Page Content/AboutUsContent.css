@@ -1,0 +1,13 @@
+.about-us-image {
+    background: url('../../../assets/giordano-rossoni-LqBCBH7b1k8-unsplash.png') no-repeat center;
+    min-height: 500px;
+}
+
+.learn-more-button {
+    width: 25px;
+    height: 25px;
+}
+
+.number {
+    font-size: 75px;
+}
