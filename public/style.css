@@ -23,9 +23,63 @@ a {
     gap: 50px;
 }
 
-.posts-section {
-    padding: 30px 120px;
-    gap: 50px;
+#mobile-app-bar {
+    position: fixed;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 99;
+}
+
+#dashboard-filter .footer-section {
+    padding: 20px!important;
+}
+
+.post-hero {
+    height: 90vh;
+    background: linear-gradient(90deg, #0073e0, #004b91);
+    margin-top: -120px;
+}
+
+.post-title {
+    font-family: 'Onest'!important;
+}
+
+.share-icon {
+    font-size: 1.4rem;
+    color: rgb(0,86,134);
+}
+
+.blog-newsletter {
+    background: linear-gradient(90deg, #0073e0, #004b91);
+}
+
+.related-articles .card {
+    background: url('../../../assets/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.related-articles .card::before {
+    content: '';
+    position: absolute;
+    border-radius: var(--bs-border-radius);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.5));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.related-articles .card .card-body {
+    bottom: 0;
+}
+
+@media (min-width: 1024px) {
+    #mobile-app-bar {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
@@ -37,5 +91,53 @@ a {
     .posts-section {
         padding: 30px 20px;
         flex-direction: column;
+    }
+
+    .hero-details {
+        padding: 0 20px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .post-sections {
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .post-author {
+        order: 0;
+    }
+
+    .post-article {
+        order: 1;
+    }
+
+    .share-section {
+        order: 2;
+    }
+
+    .share-text {
+        text-align: center;
+    }
+
+    .share-buttons {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .blog-newsletter {
+        padding: 60px 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .related-articles {
+        padding: 30px 20px;
+    }
+
+    .related-articles h4 {
+        text-align: center;
     }
 }

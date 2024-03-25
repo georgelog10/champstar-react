@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Login1 from '../components/LoginSections/Login1'
 import Login2 from '../components/LoginSections/Login2'
 

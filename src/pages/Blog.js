@@ -10,9 +10,11 @@ const Blog = () => {
     <>
       <Navbar/>
       <LastPost/>
-      <div className='posts-section'>
+      <div className='d-flex py-4 posts-section'>
+        <div className='d-flex gap-5 flex-column flex-lg-row container'>
         <PostsFilters/>
         <PostCards/>
+        </div>
       </div>
       <Footer/>
     </>
