@@ -50,10 +50,14 @@ const Login2 = () => {
         </form>
         <div className='d-flex gap-2 justify-content-between align-items-center mb-4'>
           <div className='border border-secondary-subtle w-50 separator'></div>
-          <p className='text-center mb-0 login-alt-options'>sau</p>
+          <p className='text-center mb-0 login-alt-options'>sau conectează-te cu</p>
           <div className='border border-secondary-subtle w-50 separator'></div>
         </div>
-        <button className="py-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary" onClick={logGoogleUser}><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/>Conectează-te cu Google</button>
+        <div className='d-flex justify-content-center gap-4'>
+          <button className="py-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary" onClick={logGoogleUser}><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
+          <button className='py-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary'><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
+          <button className='py-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary'><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
+        </div>
         <p className='text-center text-dark register-link'>Nu ești membru? <Link to='/register'>Creează un cont</Link></p>
     </section>
   )
