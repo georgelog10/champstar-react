@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { signInWithGooglePopup, auth } from '../../config/fire';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+import { faApple, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 const Login2 = () => {
   const navigate = useNavigate();
@@ -55,8 +55,8 @@ const Login2 = () => {
         </div>
         <div className='d-flex justify-content-center gap-4'>
           <button className="py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary" onClick={logGoogleUser}><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
-          <button className='py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary'><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
-          <button className='py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary'><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
+          <button className='py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary facebook-login'><FontAwesomeIcon icon={faFacebookF}/></button>
+          <button className='py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary apple-login'><FontAwesomeIcon icon={faApple}/></button>
         </div>
         <p className='text-center text-dark register-link'>Nu ești membru? <Link to='/register'>Creează un cont</Link></p>
     </section>
