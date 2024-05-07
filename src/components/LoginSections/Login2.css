@@ -16,6 +16,11 @@
     height: 1px;
 }
 
+.facebook-login {
+    border-color: #0765FF;
+    background-color: #0765FF;
+}
+
 @media (max-width: 500px) {
     .login-form-section {
         height: 100vh;
