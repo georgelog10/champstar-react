@@ -21,6 +21,12 @@
     background-color: #0765FF;
 }
 
+.facebook-login svg,
+.apple-login svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 500px) {
     .login-form-section {
         height: 100vh;

@@ -56,7 +56,7 @@ const Login2 = () => {
         <div className='d-flex justify-content-center gap-4'>
           <button className="py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary" onClick={logGoogleUser}><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
           <button className='py-2 px-2 rounded-3 border border-2 mb-4 d-flex gap-3 justify-content-center text-body-secondary facebook-login'><FontAwesomeIcon icon={faFacebookF} className='text-white' width={24} height={24}/></button>
-          <button className='py-2 px-2 rounded-3 border border-2 border-dark bg-dark mb-4 d-flex gap-3 justify-content-center text-body-secondary'><FontAwesomeIcon icon={faApple} className='text-white' width={24} height={24}/></button>
+          <button className='py-2 px-2 rounded-3 border border-2 border-dark bg-dark mb-4 d-flex gap-3 justify-content-center text-body-secondary apple-login'><FontAwesomeIcon icon={faApple} className='text-white' width={24} height={24}/></button>
         </div>
         <p className='text-center text-dark register-link'>Nu ești membru? <Link to='/register'>Creează un cont</Link></p>
     </section>
