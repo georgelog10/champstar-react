@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth"
+import { getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth"
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -13,10 +13,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
+const fbProvider = new FacebookAuthProvider();
 const auth = getAuth(app);
 const db = getFirestore(app)
 provider.setCustomParameters({   
     prompt : "select_account"
 });
-export { auth, db };
+export { auth, db, fbProvider };
 export const signInWithGooglePopup = () => signInWithPopup(auth, provider);

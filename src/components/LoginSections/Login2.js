@@ -4,8 +4,8 @@ import Logo from '../../assets/logo-removebg-preview.png'
 import GoogleLogo from '../../assets/Google__G__logo.svg.png'
 import { FormControlLabel, Checkbox } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
-import { signInWithGooglePopup, auth } from '../../config/fire';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithGooglePopup, auth, fbProvider } from '../../config/fire';
+import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
@@ -13,6 +13,8 @@ const Login2 = () => {
   const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const[user, setUser] = useState(null);
        
     const onLogin = (e) => {
         e.preventDefault();
@@ -32,6 +34,14 @@ const Login2 = () => {
     const logGoogleUser = async () => {
       const response = await signInWithGooglePopup();
       console.log(response);
+    }
+
+    const handleFacebookLogin=() => {
+      signInWithPopup(auth, fbProvider).then((result)=>{
+        setUser(result.user);
+      }).catch((err)=>{
+        console.log(err);
+      });
     }
 
   return (
@@ -55,7 +65,7 @@ const Login2 = () => {
         </div>
         <div className='d-flex justify-content-center gap-4'>
           <button className="py-2 px-2 rounded-3 border border-2 border-secondary-subtle mb-4 d-flex gap-3 justify-content-center text-body-secondary" onClick={logGoogleUser}><img src={GoogleLogo} alt='Google Logo' width={24} height={24}/></button>
-          <button className='py-2 px-2 rounded-3 border border-2 mb-4 d-flex gap-3 justify-content-center text-body-secondary facebook-login'><FontAwesomeIcon icon={faFacebookF} className='text-white' width={24} height={24}/></button>
+          <button className='py-2 px-2 rounded-3 border border-2 mb-4 d-flex gap-3 justify-content-center text-body-secondary facebook-login' onClick={handleFacebookLogin}><FontAwesomeIcon icon={faFacebookF} className='text-white' width={24} height={24}/></button>
           <button className='py-2 px-2 rounded-3 border border-2 border-dark bg-dark mb-4 d-flex gap-3 justify-content-center text-body-secondary apple-login'><FontAwesomeIcon icon={faApple} className='text-white' width={24} height={24}/></button>
         </div>
         <p className='text-center text-dark register-link'>Nu ești membru? <Link to='/register'>Creează un cont</Link></p>
