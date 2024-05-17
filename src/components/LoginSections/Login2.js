@@ -32,8 +32,13 @@ const Login2 = () => {
     }
 
     const logGoogleUser = async () => {
-      const response = await signInWithGooglePopup();
-      console.log(response);
+      try {
+        const response = await signInWithGooglePopup();
+        navigate("/dashboard");  // Redirect to dashboard on successful login
+        console.log(response);
+      } catch (error) {
+        console.log(error);
+      }
     }
 
     const handleFacebookLogin=() => {
