@@ -6,21 +6,44 @@ import ProfilePicture from '../../../assets/default-profile-account-unknown-icon
 import firebase from 'firebase/app';
 import { auth } from '../../../config/fire';
 import { styled, alpha } from '@mui/material/styles';
-import { TextField, Button, Menu, MenuItem, InputBase } from '@mui/material'
+import { TextField, Button, Menu, MenuItem, InputBase, Modal, Box, Typography } from '@mui/material'
 import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faGear, faUser, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+
+const modalStyle = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 const DashboardNav = () => {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const [user, setUser] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+  
+  const handleModalClose = () => {
+    setModalOpen(false);
   };
 
   const Search = styled('div')(({ theme }) => ({
@@ -144,6 +167,24 @@ const DashboardNav = () => {
           </MobileSearch>
         </div>
         </div>
+
+        <Modal
+          open={modalOpen}
+          onClose={handleModalClose}
+          aria-labelledby="modal-title"
+          aria-describedby="modal-description"
+        >
+          <Box sx={modalStyle}>
+            <Typography id="modal-title" variant="h6" component="h2">
+              Settings
+            </Typography>
+            <Typography id="modal-description" sx={{ mt: 2 }}>
+              {/* Add your modal content here */}
+              Here are the settings you can configure.
+            </Typography>
+            <Button onClick={handleModalClose}>Close</Button>
+          </Box>
+        </Modal>
     </section>
   )
 }
