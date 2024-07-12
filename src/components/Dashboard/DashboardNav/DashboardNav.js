@@ -119,7 +119,7 @@ const DashboardNav = () => {
 
   return (
     <section className='d-flex justify-content-between px-4 py-3 dashboard-navbar'>
-      <div className='container px-0 d-flex align-items-center'>
+      <div className='container-lg d-flex align-items-center'>
         <div className='d-flex align-items-center gap-4 w-50 nav-column-1'>
             <Link to='/'><img src={Logo} alt='Logo' className='logo' width={60}/></Link>
             <Search className='m-0 text-white search-bar'>

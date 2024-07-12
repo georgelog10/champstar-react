@@ -13,7 +13,7 @@ const Dashboard = () => {
     <>
       <DashboardNav />
       <section id='dashboard'>
-        <div className='container px-0'>
+        <div className='container-lg d-flex gap-5'>
           <DashboardFilter />
           <DashboardCards />
         </div>
