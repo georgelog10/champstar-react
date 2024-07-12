@@ -13,8 +13,10 @@ const Dashboard = () => {
     <>
       <DashboardNav />
       <section id='dashboard'>
-        <DashboardFilter />
-        <DashboardCards />
+        <div className='container px-0'>
+          <DashboardFilter />
+          <DashboardCards />
+        </div>
       </section>
       <section id="mobile-app-bar">
       <Box sx={{ width: '100vw' }}>
