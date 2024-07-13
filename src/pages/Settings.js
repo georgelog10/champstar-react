@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DashboardNav from '../components/Dashboard/DashboardNav/DashboardNav'
+import ProfileSettings from './settings/ProfileSettings';
+import AccountSettings from './settings/AccountSettings';
+import AppeareanceSettings from './settings/AppeareanceSettings';
+import NotificationSettings from './settings/NotificationSettings';
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -68,7 +72,7 @@ const Settings = () => {
                 return <ProfileSettings profile={profile} handleProfileChange={handleProfileChange} />;
         }
     };
-    
+
   return (
     <>
       <DashboardNav />
