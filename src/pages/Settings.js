@@ -5,8 +5,9 @@ import AccountSettings from './settings/AccountSettings';
 import AppeareanceSettings from './settings/AppeareanceSettings';
 import NotificationSettings from './settings/NotificationSettings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faUser } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
+import { faGear, faPalette } from '@fortawesome/free-solid-svg-icons';
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -86,10 +87,24 @@ const Settings = () => {
                     <h4 className='fw-bolder'>Settings</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                <Link onClick={() => setCurrentSection('Profile')}>Profile</Link>
-                <Link onClick={() => setCurrentSection('Account')}>Account</Link>
-                <Link onClick={() => setCurrentSection('Appearance')}>Appearance</Link>
-                <Link onClick={() => setCurrentSection('Notifications')}>Notifications</Link>
+                <div className='d-flex '>
+                <Link onClick={() => setCurrentSection('Profile')}>
+                    <FontAwesomeIcon icon={faUser}/>
+                    Profile
+                </Link>
+                <Link onClick={() => setCurrentSection('Account')}>
+                    <FontAwesomeIcon icon={faGear}/>
+                    Account
+                </Link>
+                <Link onClick={() => setCurrentSection('Appearance')}>
+                    <FontAwesomeIcon icon={faPalette}/>
+                    Appearance
+                </Link>
+                <Link onClick={() => setCurrentSection('Notifications')}>
+                    <FontAwesomeIcon icon={faBell}/>
+                    Notifications
+                </Link>
+                </div>
             </nav>
             <form className="w-75" onSubmit={(e) => {
                 e.preventDefault();
