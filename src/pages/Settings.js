@@ -89,19 +89,19 @@ const Settings = () => {
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
                 <div className='d-flex flex-column gap-3 pt-3'>
-                <Link onClick={() => setCurrentSection('Profile')}>
+                <Link className={currentSection === 'Profile' ? 'active' : ''} onClick={() => setCurrentSection('Profile')}>
                     <FontAwesomeIcon icon={faUser} className='mr-2'/>
                     Profile
                 </Link>
-                <Link onClick={() => setCurrentSection('Account')}>
+                <Link className={currentSection === 'Account' ? 'active' : ''} onClick={() => setCurrentSection('Account')}>
                     <FontAwesomeIcon icon={faGear}/>
                     Account
                 </Link>
-                <Link onClick={() => setCurrentSection('Appearance')}>
+                <Link className={currentSection === 'Appearance' ? 'active' : ''} onClick={() => setCurrentSection('Appearance')}>
                     <FontAwesomeIcon icon={faPalette}/>
                     Appearance
                 </Link>
-                <Link onClick={() => setCurrentSection('Notifications')}>
+                <Link className={currentSection === 'Notifications' ? 'active' : ''} onClick={() => setCurrentSection('Notifications')}>
                     <FontAwesomeIcon icon={faBell}/>
                     Notifications
                 </Link>
