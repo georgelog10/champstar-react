@@ -11,18 +11,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faGear, faUser, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
-const modalStyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
-
 const DashboardNav = () => {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
@@ -147,7 +135,7 @@ const DashboardNav = () => {
             <Link to='/' className='text-white profile'><img src={ProfilePicture} alt='Profile Picture' className='rounded-circle mr-4 profile-image' width={30}/> User</Link>
             <Button id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}><FontAwesomeIcon icon={faAngleDown} /></Button>
             <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{'aria-labelledby': 'basic-button',}}>
-              <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
+              <MenuItem onClick={handleClose} className='menu-item' component={Link} to='/settings'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
               <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faArrowRightFromBracket} className='menu-icon'/> Deconectare</MenuItem>
             </Menu>
             <MobileSearch className='mobile-search'>
