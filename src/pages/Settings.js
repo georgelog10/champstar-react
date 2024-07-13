@@ -86,16 +86,10 @@ const Settings = () => {
                     <h4 className='fw-bolder'>Settings</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                {/* <ul>
-                    <li onClick={() => setCurrentSection('Profile')}>Profile</li>
-                    <li onClick={() => setCurrentSection('Account')}>Account</li>
-                    <li onClick={() => setCurrentSection('Appearance')}>Appearance</li>
-                    <li onClick={() => setCurrentSection('Notifications')}>Notifications</li>
-                </ul> */}
-                <Button onClick={() => setCurrentSection('Profile')}>Profile</Button>
-                <Button onClick={() => setCurrentSection('Account')}>Account</Button>
-                <Button onClick={() => setCurrentSection('Appearance')}>Appearance</Button>
-                <Button onClick={() => setCurrentSection('Notifications')}>Notifications</Button>
+                <Link onClick={() => setCurrentSection('Profile')}>Profile</Link>
+                <Link onClick={() => setCurrentSection('Account')}>Account</Link>
+                <Link onClick={() => setCurrentSection('Appearance')}>Appearance</Link>
+                <Link onClick={() => setCurrentSection('Notifications')}>Notifications</Link>
             </nav>
             <form className="w-75" onSubmit={(e) => {
                 e.preventDefault();
@@ -105,7 +99,6 @@ const Settings = () => {
                 console.log('Notifications:', notifications);
             }}>
                 {renderSection()}
-                <button type="submit">Save Settings</button>
             </form>
         </div>
         </div>
