@@ -4,6 +4,8 @@ import ProfileSettings from './settings/ProfileSettings';
 import AccountSettings from './settings/AccountSettings';
 import AppeareanceSettings from './settings/AppeareanceSettings';
 import NotificationSettings from './settings/NotificationSettings';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -79,6 +81,10 @@ const Settings = () => {
       <div className="settings-page">
         <div className='container-lg d-flex gap-5'>
             <nav className='shadow-lg w-25'>
+                <div className='d-flex justify-content-between align-items-center'>
+                    <h3 className='fw-bolder'>Settings</h3>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </div>
                 <ul>
                     <li onClick={() => setCurrentSection('Profile')}>Profile</li>
                     <li onClick={() => setCurrentSection('Account')}>Account</li>
