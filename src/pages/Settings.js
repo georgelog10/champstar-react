@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faGear, faPalette } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faBell, faUser } from '@fortawesome/free-regular-svg-icons';
+import SettingsProfile from '../assets/icons/user-stroke-rounded.svg'
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -82,14 +83,15 @@ const Settings = () => {
       <DashboardNav />
       <div className="settings-page">
         <div className='container-lg d-flex gap-5'>
-            <nav className='shadow-lg w-25 rounded'>
-                <div className='d-flex justify-content-between align-items-center'>
-                    <h4 className='fw-bolder'>Settings</h4>
+            <nav className='shadow-lg w-25 rounded-4 p-4'>
+                <div className='d-flex justify-content-between align-items-center border-bottom pb-3'>
+                    <h4 className='fw-bolder mb-0'>Settings</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                <div className='d-flex '>
+                <div className='d-flex flex-column gap-3'>
                 <Link onClick={() => setCurrentSection('Profile')}>
-                    <FontAwesomeIcon icon={faUser}/>
+                    {/* <FontAwesomeIcon icon={faUser}/> */}
+                    <SettingsProfile />
                     Profile
                 </Link>
                 <Link onClick={() => setCurrentSection('Account')}>
