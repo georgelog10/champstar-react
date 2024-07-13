@@ -88,9 +88,9 @@ const Settings = () => {
                     <h4 className='fw-bolder mb-0'>Settings</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                <div className='d-flex flex-column gap-3'>
+                <div className='d-flex flex-column gap-3 pt-3'>
                 <Link onClick={() => setCurrentSection('Profile')}>
-                    <FontAwesomeIcon icon={faUser}/>
+                    <FontAwesomeIcon icon={faUser} className='mr-2'/>
                     Profile
                 </Link>
                 <Link onClick={() => setCurrentSection('Account')}>
