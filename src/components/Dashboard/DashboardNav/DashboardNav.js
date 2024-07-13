@@ -6,7 +6,7 @@ import ProfilePicture from '../../../assets/default-profile-account-unknown-icon
 import firebase from 'firebase/app';
 import { auth } from '../../../config/fire';
 import { styled, alpha } from '@mui/material/styles';
-import { TextField, Button, Menu, MenuItem, InputBase, Modal, Box, Typography } from '@mui/material'
+import { Button, Menu, MenuItem, InputBase } from '@mui/material'
 import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightFromBracket, faGear, faUser, faAngleDown } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +27,6 @@ const DashboardNav = () => {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const [user, setUser] = useState(null);
-  const [modalOpen, setModalOpen] = useState(false);
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
@@ -36,14 +35,6 @@ const DashboardNav = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
-  };
-
-  const handleModalOpen = () => {
-    setModalOpen(true);
-  };
-  
-  const handleModalClose = () => {
-    setModalOpen(false);
   };
 
   const Search = styled('div')(({ theme }) => ({
@@ -153,10 +144,10 @@ const DashboardNav = () => {
             </Search>
         </div>
         <div className='d-flex justify-content-end align-items-center gap-2 text-white w-50 nav-column-2'>
-            <Link className='text-white profile'><img src={ProfilePicture} alt='Profile Picture' className='rounded-circle mr-4 profile-image' width={30}/> User</Link>
+            <Link to='/' className='text-white profile'><img src={ProfilePicture} alt='Profile Picture' className='rounded-circle mr-4 profile-image' width={30}/> User</Link>
             <Button id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}><FontAwesomeIcon icon={faAngleDown} /></Button>
             <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{'aria-labelledby': 'basic-button',}}>
-              <MenuItem onClick={handleModalOpen} className='menu-item'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
+              <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
               <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faArrowRightFromBracket} className='menu-icon'/> Deconectare</MenuItem>
             </Menu>
             <MobileSearch className='mobile-search'>
@@ -167,24 +158,6 @@ const DashboardNav = () => {
           </MobileSearch>
         </div>
         </div>
-
-        <Modal
-          open={modalOpen}
-          onClose={handleModalClose}
-          aria-labelledby="modal-title"
-          aria-describedby="modal-description"
-        >
-          <Box sx={modalStyle}>
-            <Typography id="modal-title" variant="h6" component="h2">
-              Settings
-            </Typography>
-            <Typography id="modal-description" sx={{ mt: 2 }}>
-              {/* Add your modal content here */}
-              Here are the settings you can configure.
-            </Typography>
-            <Button onClick={handleModalClose}>Close</Button>
-          </Box>
-        </Modal>
     </section>
   )
 }
