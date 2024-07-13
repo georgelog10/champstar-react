@@ -77,8 +77,8 @@ const Settings = () => {
     <>
       <DashboardNav />
       <div className="settings-page">
-        <div className='container-lg d-flex'>
-            <nav className='shadow-lg'>
+        <div className='container-lg d-flex gap-5'>
+            <nav className='shadow-lg w-25'>
                 <ul>
                     <li onClick={() => setCurrentSection('Profile')}>Profile</li>
                     <li onClick={() => setCurrentSection('Account')}>Account</li>
@@ -86,7 +86,7 @@ const Settings = () => {
                     <li onClick={() => setCurrentSection('Notifications')}>Notifications</li>
                 </ul>
             </nav>
-            <form onSubmit={(e) => {
+            <form className="w-75" onSubmit={(e) => {
                 e.preventDefault();
                 console.log('Profile:', profile);
                 console.log('Account:', account);
