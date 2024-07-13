@@ -6,6 +6,7 @@ import AppeareanceSettings from './settings/AppeareanceSettings';
 import NotificationSettings from './settings/NotificationSettings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Button } from 'react-bootstrap';
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -80,17 +81,21 @@ const Settings = () => {
       <DashboardNav />
       <div className="settings-page">
         <div className='container-lg d-flex gap-5'>
-            <nav className='shadow-lg w-25'>
+            <nav className='shadow-lg w-25 rounded'>
                 <div className='d-flex justify-content-between align-items-center'>
-                    <h3 className='fw-bolder'>Settings</h3>
+                    <h4 className='fw-bolder'>Settings</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                <ul>
+                {/* <ul>
                     <li onClick={() => setCurrentSection('Profile')}>Profile</li>
                     <li onClick={() => setCurrentSection('Account')}>Account</li>
                     <li onClick={() => setCurrentSection('Appearance')}>Appearance</li>
                     <li onClick={() => setCurrentSection('Notifications')}>Notifications</li>
-                </ul>
+                </ul> */}
+                <Button onClick={() => setCurrentSection('Profile')}>Profile</Button>
+                <Button onClick={() => setCurrentSection('Account')}>Account</Button>
+                <Button onClick={() => setCurrentSection('Appearance')}>Appearance</Button>
+                <Button onClick={() => setCurrentSection('Notifications')}>Notifications</Button>
             </nav>
             <form className="w-75" onSubmit={(e) => {
                 e.preventDefault();
