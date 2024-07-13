@@ -65,7 +65,7 @@ const Settings = () => {
             case 'Account':
                 return <AccountSettings account={account} handleAccountChange={handleAccountChange} />;
             case 'Appearance':
-                return <AppearanceSettings appearance={appearance} handleAppearanceChange={handleAppearanceChange} />;
+                return <AppeareanceSettings appearance={appearance} handleAppearanceChange={handleAppearanceChange} />;
             case 'Notifications':
                 return <NotificationSettings notifications={notifications} handleNotificationChange={handleNotificationChange} />;
             default:
