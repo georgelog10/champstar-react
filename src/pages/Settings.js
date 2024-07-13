@@ -6,7 +6,7 @@ import AppeareanceSettings from './settings/AppeareanceSettings';
 import NotificationSettings from './settings/NotificationSettings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
