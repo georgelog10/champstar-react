@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileSettings = () => {
+const ProfileSettings = ({ profile, handleProfileChange }) => {
   return (
     <div>
             <h2>Profile</h2>
