@@ -77,8 +77,8 @@ const Settings = () => {
     <>
       <DashboardNav />
       <div className="settings-page">
-            <h1>Settings</h1>
-            <nav>
+        <div className='container-lg d-flex'>
+            <nav className='shadow-lg'>
                 <ul>
                     <li onClick={() => setCurrentSection('Profile')}>Profile</li>
                     <li onClick={() => setCurrentSection('Account')}>Account</li>
@@ -96,6 +96,7 @@ const Settings = () => {
                 {renderSection()}
                 <button type="submit">Save Settings</button>
             </form>
+        </div>
         </div>
     </>
   )
