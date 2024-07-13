@@ -135,7 +135,9 @@ const DashboardNav = () => {
             <Link to='/' className='text-white profile'><img src={ProfilePicture} alt='Profile Picture' className='rounded-circle mr-4 profile-image' width={30}/> User</Link>
             <Button id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}><FontAwesomeIcon icon={faAngleDown} /></Button>
             <Menu id="basic-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{'aria-labelledby': 'basic-button',}}>
-              <MenuItem onClick={handleClose} className='menu-item' component={Link} to='/settings'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
+              <Link to='/settings'>
+                <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faGear} className='menu-icon'/> Setări</MenuItem>
+              </Link>
               <MenuItem onClick={handleClose} className='menu-item'><FontAwesomeIcon icon={faArrowRightFromBracket} className='menu-icon'/> Deconectare</MenuItem>
             </Menu>
             <MobileSearch className='mobile-search'>
