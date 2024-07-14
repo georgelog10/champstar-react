@@ -91,21 +91,21 @@ const Settings = () => {
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
                 <div className='d-flex flex-column gap-3 pt-3'>
-                <Link className={currentSection === 'Profil' ? 'active' : ''} onClick={() => setCurrentSection('Profil')}>
+                <Link className={`d-flex align-items-center gap-1 ${currentSection === 'Profile' ? 'active' : ''}`} onClick={() => setCurrentSection('Profile')}>
                     <img src={SettingsProfile} alt='Profile Icon'/>
-                    Profile
+                    Profil
                 </Link>
-                <Link className={currentSection === 'Cont' ? 'active' : ''} onClick={() => setCurrentSection('Cont')}>
+                <Link className={`d-flex align-items-center gap-1 ${currentSection === 'Account' ? 'active' : ''}`} onClick={() => setCurrentSection('Account')}>
                     <img src={SettingsAccount} alt='Profile Icon'/>
-                    Account
+                    Cont
                 </Link>
-                <Link className={currentSection === 'Aspect' ? 'active' : ''} onClick={() => setCurrentSection('Aspect')}>
+                <Link className={`d-flex align-items-center gap-1 ${currentSection === 'Appearance' ? 'active' : ''}`} onClick={() => setCurrentSection('Appearance')}>
                     <img src={SettingsAppeareance} alt='Profile Icon'/>
-                    Appearance
+                    Aspect
                 </Link>
-                <Link className={currentSection === 'Notificări' ? 'active' : ''} onClick={() => setCurrentSection('Notificări')}>
+                <Link className={`d-flex align-items-center gap-1 ${currentSection === 'Notifications' ? 'active' : ''}`} onClick={() => setCurrentSection('Notifications')}>
                     <img src={SettingsNotifications} alt='Profile Icon'/>
-                    Notifications
+                    Notificări
                 </Link>
                 </div>
             </nav>

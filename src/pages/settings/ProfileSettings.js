@@ -71,24 +71,22 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
       </div>
       <div>
         <label>
-          Despre mine
+          Data nașterii
           <input
-            type="textarea"
-            name="about_me"
-            value={profile.about_me}
+            type="date"
+            name="birthdate"
+            value={profile.birthdate}
             onChange={handleProfileChange}
           />
         </label>
       </div>
       <div>
         <label>
-          Despre mine
-          <input
-            type="textarea"
-            name="about_me"
-            value={profile.about_me}
-            onChange={handleProfileChange}
-          />
+          Gen
+          <select>
+            <option value={male}>Barbat</option>
+            <option value={female}>Femeie</option>
+          </select>
         </label>
       </div>
       <div>
