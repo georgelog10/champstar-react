@@ -47,6 +47,39 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           </div>
         </label>
       </div>
+      <div>
+        <label>
+          Nume profil
+          <input
+            type="text"
+            name="profile_name"
+            value={profile.profile_name}
+            onChange={handleProfileChange}
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Adresă de email
+          <input
+            type="email"
+            name="email"
+            value={profile.email}
+            onChange={handleProfileChange}
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Despre mine
+          <input
+            type="textarea"
+            name="about_me"
+            value={profile.about_me}
+            onChange={handleProfileChange}
+          />
+        </label>
+      </div>
     </div>
   );
 };
