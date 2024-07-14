@@ -87,23 +87,23 @@ const Settings = () => {
         <div className='container-lg d-flex gap-5'>
             <nav className='shadow-lg w-25 rounded-4 p-4'>
                 <div className='d-flex justify-content-between align-items-center border-bottom pb-3'>
-                    <h4 className='fw-bolder mb-0'>Settings</h4>
+                    <h4 className='fw-bolder mb-0'>Setări</h4>
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
                 <div className='d-flex flex-column gap-3 pt-3'>
-                <Link className={currentSection === 'Profile' ? 'active' : ''} onClick={() => setCurrentSection('Profile')}>
+                <Link className={currentSection === 'Profil' ? 'active' : ''} onClick={() => setCurrentSection('Profil')}>
                     <img src={SettingsProfile} alt='Profile Icon'/>
                     Profile
                 </Link>
-                <Link className={currentSection === 'Account' ? 'active' : ''} onClick={() => setCurrentSection('Account')}>
+                <Link className={currentSection === 'Cont' ? 'active' : ''} onClick={() => setCurrentSection('Cont')}>
                     <img src={SettingsAccount} alt='Profile Icon'/>
                     Account
                 </Link>
-                <Link className={currentSection === 'Appearance' ? 'active' : ''} onClick={() => setCurrentSection('Appearance')}>
+                <Link className={currentSection === 'Aspect' ? 'active' : ''} onClick={() => setCurrentSection('Aspect')}>
                     <img src={SettingsAppeareance} alt='Profile Icon'/>
                     Appearance
                 </Link>
-                <Link className={currentSection === 'Notifications' ? 'active' : ''} onClick={() => setCurrentSection('Notifications')}>
+                <Link className={currentSection === 'Notificări' ? 'active' : ''} onClick={() => setCurrentSection('Notificări')}>
                     <img src={SettingsNotifications} alt='Profile Icon'/>
                     Notifications
                 </Link>
