@@ -80,6 +80,28 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           />
         </label>
       </div>
+      <div>
+        <label>
+          Despre mine
+          <input
+            type="textarea"
+            name="about_me"
+            value={profile.about_me}
+            onChange={handleProfileChange}
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Despre mine
+          <input
+            type="textarea"
+            name="about_me"
+            value={profile.about_me}
+            onChange={handleProfileChange}
+          />
+        </label>
+      </div>
     </div>
   );
 };
