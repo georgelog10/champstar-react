@@ -81,7 +81,7 @@ const Settings = () => {
   return (
     <>
       <DashboardNav />
-      <div className="settings-page">
+      <div className="pt-4 settings-page">
         <div className='container-lg d-flex gap-5'>
             <nav className='shadow-lg w-25 rounded-4 p-4'>
                 <div className='d-flex justify-content-between align-items-center border-bottom pb-3'>
