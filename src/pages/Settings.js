@@ -92,7 +92,7 @@ const Settings = () => {
                 <div className='d-flex flex-column gap-3 pt-3'>
                 <Link className={currentSection === 'Profile' ? 'active' : ''} onClick={() => setCurrentSection('Profile')}>
                     {/* <FontAwesomeIcon icon={faUser} className='mr-2'/> */}
-                    <Image source={SettingsProfile} alt='Profile Icon'/>
+                    <img src={SettingsProfile} alt='Profile Icon'/>
                     Profile
                 </Link>
                 <Link className={currentSection === 'Account' ? 'active' : ''} onClick={() => setCurrentSection('Account')}>
