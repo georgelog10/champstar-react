@@ -84,8 +84,8 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
         <label>
           Gen
           <select>
-            <option value={male}>Barbat</option>
-            <option value={female}>Femeie</option>
+            <option value="male">Barbat</option>
+            <option value="female">Femeie</option>
           </select>
         </label>
       </div>
