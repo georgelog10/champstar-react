@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import DashboardNav from '../components/Dashboard/DashboardNav/DashboardNav'
-import ProfileSettings from './settings/ProfileSettings';
-import AccountSettings from './settings/AccountSettings';
-import AppeareanceSettings from './settings/AppeareanceSettings';
-import NotificationSettings from './settings/NotificationSettings';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faGear, faPalette } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import { faBell, faUser } from '@fortawesome/free-regular-svg-icons';
-import SettingsProfile from '../assets/icons/user-stroke-rounded.svg';
-import { Image } from 'react-bootstrap';
+import ProfileSettings from './settings/ProfileSettings'
+import AccountSettings from './settings/AccountSettings'
+import AppeareanceSettings from './settings/AppeareanceSettings'
+import NotificationSettings from './settings/NotificationSettings'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import SettingsProfile from '../assets/icons/user-stroke-rounded.svg'
+import SettingsAccount from '../assets/icons/settings-02-stroke-rounded.svg'
+import SettingsAppeareance from '../assets/icons/paint-board-stroke-rounded.svg'
+import SettingsNotifications from '../assets/icons/notification-02-stroke-rounded.svg'
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -91,20 +92,19 @@ const Settings = () => {
                 </div>
                 <div className='d-flex flex-column gap-3 pt-3'>
                 <Link className={currentSection === 'Profile' ? 'active' : ''} onClick={() => setCurrentSection('Profile')}>
-                    {/* <FontAwesomeIcon icon={faUser} className='mr-2'/> */}
                     <img src={SettingsProfile} alt='Profile Icon'/>
                     Profile
                 </Link>
                 <Link className={currentSection === 'Account' ? 'active' : ''} onClick={() => setCurrentSection('Account')}>
-                    <FontAwesomeIcon icon={faGear}/>
+                    <img src={SettingsAccount} alt='Profile Icon'/>
                     Account
                 </Link>
                 <Link className={currentSection === 'Appearance' ? 'active' : ''} onClick={() => setCurrentSection('Appearance')}>
-                    <FontAwesomeIcon icon={faPalette}/>
+                    <img src={SettingsAppeareance} alt='Profile Icon'/>
                     Appearance
                 </Link>
                 <Link className={currentSection === 'Notifications' ? 'active' : ''} onClick={() => setCurrentSection('Notifications')}>
-                    <FontAwesomeIcon icon={faBell}/>
+                    <img src={SettingsNotifications} alt='Profile Icon'/>
                     Notifications
                 </Link>
                 </div>
