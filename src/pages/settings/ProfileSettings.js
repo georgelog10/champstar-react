@@ -15,27 +15,36 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
     }
   };
 
+  const handleDeleteImage = () => {
+    setProfileImage(ProfilePicture);
+  };
+
   return (
     <div>
       <div>
         <label>
-          Imagine de profil:
-          <img
-            id="profileImage"
-            src={ProfilePicture}
-            alt="Profile"
-            style={{ width: "150px", height: "150px", display: "block" }}
-          />
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageChange}
-            style={{ display: "none" }}
-            id="fileInput"
-          />
-          <button onClick={() => document.getElementById("fileInput").click()}>
-            Change Profile Image
-          </button>
+          Imagine de profil
+          <div className="d-flex">
+            <img
+              id="profileImage"
+              src={ProfilePicture}
+              alt="Profile"
+              style={{ width: "150px", height: "150px", display: "block" }}
+            />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+              style={{ display: "none" }}
+              id="fileInput"
+            />
+            <button
+              onClick={() => document.getElementById("fileInput").click()}
+            >
+              Change Profile Image
+            </button>
+            <button onClick={handleDeleteImage}>Delete Profile Image</button>
+          </div>
         </label>
       </div>
     </div>
