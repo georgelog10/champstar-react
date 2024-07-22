@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/champstar-react/static/css/main.edd2edc6.css",
-    "main.js": "/champstar-react/static/js/main.a6b35b0d.js",
+    "main.js": "/champstar-react/static/js/main.7a70aa4e.js",
     "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
     "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
     "static/media/about.jpg": "/champstar-react/static/media/about.874b463a9e45c7159e97.jpg",
@@ -22,11 +22,11 @@
     "static/media/paint-board-stroke-rounded.svg": "/champstar-react/static/media/paint-board-stroke-rounded.205e37168ce97030f5ade777c1942e95.svg",
     "static/media/user-stroke-rounded.svg": "/champstar-react/static/media/user-stroke-rounded.d6be273f3e3c1eaf5e4ca0a80e63292d.svg",
     "main.edd2edc6.css.map": "/champstar-react/static/css/main.edd2edc6.css.map",
-    "main.a6b35b0d.js.map": "/champstar-react/static/js/main.a6b35b0d.js.map",
+    "main.7a70aa4e.js.map": "/champstar-react/static/js/main.7a70aa4e.js.map",
     "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.edd2edc6.css",
-    "static/js/main.a6b35b0d.js"
+    "static/js/main.7a70aa4e.js"
   ]
 }
