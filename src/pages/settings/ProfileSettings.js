@@ -52,7 +52,7 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
         <input
             type="text"
             name="profile_name"
-            className="form-control"
+            className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.profile_name}
             onChange={handleProfileChange}
           />
