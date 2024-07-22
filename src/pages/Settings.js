@@ -4,13 +4,12 @@ import ProfileSettings from './settings/ProfileSettings'
 import AccountSettings from './settings/AccountSettings'
 import AppeareanceSettings from './settings/AppeareanceSettings'
 import NotificationSettings from './settings/NotificationSettings'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import SettingsProfile from '../assets/icons/user-stroke-rounded.svg'
 import SettingsAccount from '../assets/icons/settings-02-stroke-rounded.svg'
 import SettingsAppeareance from '../assets/icons/paint-board-stroke-rounded.svg'
 import SettingsNotifications from '../assets/icons/notification-02-stroke-rounded.svg'
+import SettingsSearch from '../assets/icons/search-01-stroke-rounded.svg'
 
 const Settings = () => {
     const [currentSection, setCurrentSection] = useState('Profile');
@@ -88,7 +87,7 @@ const Settings = () => {
             <nav className='shadow-lg w-25 rounded-4 p-4'>
                 <div className='d-flex justify-content-between align-items-center border-bottom pb-3'>
                     <h4 className='fw-bolder mb-0'>Setări</h4>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <img src={SettingsSearch} alt='Profile Icon'/>
                 </div>
                 <div className='d-flex flex-column gap-3 pt-3'>
                 <Link className={`d-flex align-items-center gap-1 ${currentSection === 'Profile' ? 'active' : ''}`} onClick={() => setCurrentSection('Profile')}>
