@@ -24,7 +24,7 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
       <div>
         <label>
           Imagine de profil
-          <div className="d-flex">
+          <div className="d-flex align-items-center gap-4">
             <img
               id="profileImage"
               src={ProfilePicture}
