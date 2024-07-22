@@ -47,16 +47,15 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           </div>
         </label>
       </div>
-      <div>
-        <label>
-          Nume profil
-          <input
+      <div className="mb-3">
+        <label for="" className="form-label">Nume profil</label>
+        <input
             type="text"
             name="profile_name"
+            className="form-control"
             value={profile.profile_name}
             onChange={handleProfileChange}
           />
-        </label>
       </div>
       <div>
         <label>
