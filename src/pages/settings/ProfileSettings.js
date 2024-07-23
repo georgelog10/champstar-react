@@ -48,25 +48,26 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
         </label>
       </div>
       <div className="mb-3">
-        <label for="" className="form-label">Nume profil</label>
+        <label for="profile_name" className="form-label">Nume profil</label>
         <input
             type="text"
             name="profile_name"
+            id="profile_name"
             className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.profile_name}
             onChange={handleProfileChange}
           />
       </div>
-      <div>
-        <label>
-          Adresă de email
+      <div className="mb-3">
+        <label for="email" className="form-label">Adresă de email</label>
           <input
             type="email"
             name="email"
+            id="email"
+            className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.email}
             onChange={handleProfileChange}
           />
-        </label>
       </div>
       <div>
         <label>
