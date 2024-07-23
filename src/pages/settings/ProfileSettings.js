@@ -70,15 +70,15 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           />
       </div>
       <div>
-        <label>
-          Data nașterii
+        <label for="birthdate" className="form-label">Data nașterii</label>
           <input
             type="date"
             name="birthdate"
+            id="birthdate"
+            className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.birthdate}
             onChange={handleProfileChange}
           />
-        </label>
       </div>
       <div>
         <label>
