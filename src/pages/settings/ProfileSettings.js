@@ -81,24 +81,22 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           />
       </div>
       <div>
-        <label>
-          Gen
-          <select>
+        <label for="gender" className="form-label">Gen</label>
+          <select id="gender" name="gender" className="form-control border border-2 border-dark-subtle p-2 rounded-2">
             <option value="male">Barbat</option>
             <option value="female">Femeie</option>
           </select>
-        </label>
       </div>
       <div>
-        <label>
-          Despre mine
+        <label for="about_me" className="form-label">Despre mine</label>
           <input
             type="textarea"
             name="about_me"
+            id="about_me"
+            className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.about_me}
             onChange={handleProfileChange}
           />
-        </label>
       </div>
     </div>
   );
