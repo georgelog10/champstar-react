@@ -101,9 +101,13 @@ const DashboardTopBar = () => {
             </Search>
         </div>
         <div>
-        <Button onClick={handleToggle}>
-        {isCardView ? 'Switch to List View' : 'Switch to Card View'}
-        </Button>
+        <div className="toggle-container">
+        <label className="switch">
+          <input type="checkbox" checked={isCardView} onChange={handleSwitch} />
+          <span className="slider"></span>
+        </label>
+        <span>{isCardView ? 'Card View' : 'List View'}</span>
+      </div>
         </div>
     </div>
   )
