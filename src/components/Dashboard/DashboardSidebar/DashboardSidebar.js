@@ -7,6 +7,7 @@ import BookmarkIcon from '../../../assets/icons/bookmark-03-stroke-rounded.svg'
 import NotificationsIcon from '../../../assets/icons/notification-02-stroke-rounded.svg'
 import ChatIcon from '../../../assets/icons/bubble-chat-stroke-rounded.svg'
 import SettingsIcon from '../../../assets/icons/settings-02-stroke-rounded.svg'
+import ProfilePicture from '../../../assets/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg'
 import { Link } from 'react-router-dom'
 
 const DashboardSidebar = () => {
@@ -42,9 +43,9 @@ const DashboardSidebar = () => {
             </Link>
         </div>
         <div className='position-absolute dashboard-profile'>
-            <img src=''/>
-            <p>User name</p>
-            <p>Email</p>
+            <img src={ProfilePicture} alt='Profile Image' width={60}/>
+            <h6 className='text-center'>User name</h6>
+            <span className='text-center text-secondary'>Email</span>
         </div>
     </div>
   )
