@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardSidebar = () => {
   return (
-    <div id="dashboard-sidebar" className='w-25 p-4 shadow-lg rounded-4'>
+    <div id="dashboard-sidebar" className='w-25 p-4 rounded-4 border-3 border-secondary'>
         <div className='pb-4 px-3 border-bottom border-3'>
             <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
         </div>
@@ -19,7 +19,7 @@ const DashboardSidebar = () => {
                 <img src={DashboardIcon} alt='Dashboard Icon'/>
                 Dashboard
             </Link>
-            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2 active`}>
                 <img src={ContestListIcon} alt='Dashboard Icon'/>
                 Concursuri
             </Link>
