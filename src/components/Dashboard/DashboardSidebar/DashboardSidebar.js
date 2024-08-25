@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/logo-removebg-preview.png'
+import Logo from '../../../assets/logo-removebg-preview.png'
 
 const DashboardSidebar = () => {
   return (
