@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardSidebar = () => {
   return (
-    <div id="dashboard-sidebar" className='w-25 p-4 rounded-4 border-3 border-secondary'>
+    <div id="dashboard-sidebar" className='w-25 p-4 rounded-4 border-3 border-secondary position-relative'>
         <div className='pb-4 px-3 border-bottom border-3'>
             <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
         </div>
@@ -40,7 +40,7 @@ const DashboardSidebar = () => {
                 Setări
             </Link>
         </div>
-        <div className='dashboard-profile'>
+        <div className='position-absolute dashboard-profile'>
             <img src=''/>
             <p>User name</p>
             <p>Email</p>
