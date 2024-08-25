@@ -6,6 +6,7 @@ import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DashboardSidebar from '../components/Dashboard/DashboardSidebar/DashboardSidebar';
+import DashboardTopBar from '../components/Dashboard/DashboardTopBar/DashboardTopBar';
 
 const Dashboard = () => {
   const [value, setValue] = React.useState(0);
@@ -17,6 +18,7 @@ const Dashboard = () => {
         <div className='container-lg d-flex gap-5'>
           <DashboardSidebar/>
           <div className='w-75 dashboard-content'>
+            <DashboardTopBar/>
             <DashboardCards/>
           </div>
         </div>
