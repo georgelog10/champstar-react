@@ -14,28 +14,28 @@ const DashboardSidebar = () => {
         <div className='pb-4 border-bottom border-3'>
             <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
         </div>
-        <div className='pt-4 dashboard-menu'>
-            <Link className={`d-flex align-items-center gap-1`}>
+        <div className='pt-4 d-flex flex-column gap-2 dashboard-menu'>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={DashboardIcon} alt='Dashboard Icon'/>
                 Dashboard
             </Link>
-            <Link className={`d-flex align-items-center gap-1`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={ContestListIcon} alt='Dashboard Icon'/>
                 Concursuri
             </Link>
-            <Link className={`d-flex align-items-center gap-1`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={BookmarkIcon} alt='Dashboard Icon'/>
                 Concursurile mele
             </Link>
-            <Link className={`d-flex align-items-center gap-1`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={NotificationsIcon} alt='Dashboard Icon'/>
                 Notificări
             </Link>
-            <Link className={`d-flex align-items-center gap-1`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={ChatIcon} alt='Dashboard Icon'/>
                 Chat
             </Link>
-            <Link className={`d-flex align-items-center gap-1`}>
+            <Link className={`d-flex align-items-center gap-2 px-3 py-2`}>
                 <img src={SettingsIcon} alt='Dashboard Icon'/>
                 Setări
             </Link>
