@@ -5,20 +5,20 @@ import DashboardCards from '../components/Dashboard/DashboardCards/DashboardCard
 import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import DashboardSidebar from '../components/Dashboard/DashboardSidebar/DashboardSidebar';
 
 const Dashboard = () => {
   const [value, setValue] = React.useState(0);
 
   return (
     <>
-      <DashboardNav />
+      {/* <DashboardNav /> */}
       <section id='dashboard'>
         <div className='container-lg d-flex gap-5'>
-          <DashboardFilter />
-          <DashboardCards />
+          <DashboardSidebar/>
         </div>
       </section>
-      <section id="mobile-app-bar">
+      {/* <section id="mobile-app-bar">
       <Box sx={{ width: '100vw' }}>
       <BottomNavigation
         showLabels
@@ -31,8 +31,8 @@ const Dashboard = () => {
         <BottomNavigationAction icon={<AccountCircleIcon />} />
       </BottomNavigation>
     </Box>
-    </section>
-    </>
+    </section> */}
+  </>
   )
 }
 
