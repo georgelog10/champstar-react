@@ -5,7 +5,7 @@ const DashboardSidebar = () => {
   return (
     <div id="dashboard-sidebar" className='w-25 p-4 shadow-lg rounded'>
         <div className='dashboard-logo'>
-            <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
+            <img src={Logo} alt='Logo' className='mb-4 border-bottom border-3 dashboard-logo' width={60}/>
         </div>
         <div className='dashboard-menu'>
             <p>Dashboard</p>
