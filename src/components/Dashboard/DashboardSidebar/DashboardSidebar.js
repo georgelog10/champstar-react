@@ -44,7 +44,7 @@ const DashboardSidebar = () => {
         </div>
         <div className='position-absolute w-100 d-flex flex-column align-items-center dashboard-profile'>
             <img src={ProfilePicture} alt='Profile Image' className='mb-2 rounded-circle' width={60}/>
-            <h5 className='mb-0'>User name</h5>
+            <h5 className='mb-0 fw-semibold'>User name</h5>
             <p className='text-secondary mb-0'>Email</p>
         </div>
     </div>
