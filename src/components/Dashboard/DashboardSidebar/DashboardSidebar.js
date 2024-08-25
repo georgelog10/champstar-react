@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardSidebar = () => {
   return (
-    <div id="dashboard-sidebar" className='w-25 p-4 rounded-4 shadow position-relative'>
+    <div id="dashboard-sidebar" className='w-25 p-4 rounded-4 shadow position-relative bg-white'>
         <div className='pb-4 px-3 border-bottom border-3'>
             <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
         </div>
