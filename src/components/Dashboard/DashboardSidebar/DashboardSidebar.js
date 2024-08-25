@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../../assets/logo-removebg-preview.png'
 import DashboardIcon from '../../../assets/icons/dashboard-square-edit-stroke-rounded.svg'
+import { Link } from 'react-router-dom'
 
 const DashboardSidebar = () => {
   return (
