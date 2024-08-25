@@ -16,7 +16,7 @@ const Dashboard = () => {
       <section id='dashboard'>
         <div className='container-lg d-flex gap-5'>
           <DashboardSidebar/>
-          <div className='dashboard-content'>
+          <div className='w-75 dashboard-content'>
             <DashboardCards/>
           </div>
         </div>

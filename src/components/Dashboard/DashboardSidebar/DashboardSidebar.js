@@ -1,14 +1,18 @@
 import React from 'react'
 import Logo from '../../../assets/logo-removebg-preview.png'
+import DashboardIcon from '../../../assets/icons/dashboard-square-edit-stroke-rounded.svg'
 
 const DashboardSidebar = () => {
   return (
-    <div id="dashboard-sidebar" className='w-25 p-4 shadow-lg rounded'>
-        <div className='mb-4 border-bottom border-3'>
+    <div id="dashboard-sidebar" className='w-25 p-4 shadow-lg rounded-4'>
+        <div className='pb-4 border-bottom border-3'>
             <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
         </div>
-        <div className='dashboard-menu'>
-            <p>Dashboard</p>
+        <div className='pt-4 dashboard-menu'>
+            <Link className={`d-flex align-items-center gap-1`}>
+                <img src={DashboardIcon} alt='Dashboard Icon'/>
+                Dashboard
+            </Link>
             <p>Concursuri</p>
             <p>Concursurile mele</p>
             <p>Notificari</p>
