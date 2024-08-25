@@ -16,6 +16,9 @@ const Dashboard = () => {
       <section id='dashboard'>
         <div className='container-lg d-flex gap-5'>
           <DashboardSidebar/>
+          <div className='dashboard-content'>
+            <DashboardCards/>
+          </div>
         </div>
       </section>
       {/* <section id="mobile-app-bar">

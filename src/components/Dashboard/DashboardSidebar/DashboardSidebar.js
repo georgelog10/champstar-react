@@ -1,8 +1,26 @@
 import React from 'react'
+import Logo from '../../assets/logo-removebg-preview.png'
 
 const DashboardSidebar = () => {
   return (
-    <div>DashboardSidebar</div>
+    <div id="dashboard-sidebar">
+        <div className='dashboard-logo'>
+            <img src={Logo} alt='Logo' className='dashboard-logo' width={60}/>
+        </div>
+        <div className='dashboard-menu'>
+            <p>Dashboard</p>
+            <p>Concursuri</p>
+            <p>Concursurile mele</p>
+            <p>Notificari</p>
+            <p>Chat</p>
+            <p>Setari</p>
+        </div>
+        <div className='dashboard-profile'>
+            <img src=''/>
+            <p>User name</p>
+            <p>Email</p>
+        </div>
+    </div>
   )
 }
 
