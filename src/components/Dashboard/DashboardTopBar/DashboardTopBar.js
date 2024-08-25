@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Button } from 'react-bootstrap';
+import { styled, alpha } from '@mui/material/styles';
+import { Button, InputBase } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search'
 
 const DashboardTopBar = () => {
     const Search = styled('div')(({ theme }) => ({
