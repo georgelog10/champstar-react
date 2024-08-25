@@ -86,7 +86,7 @@ const DashboardTopBar = () => {
 
       const [isCardView, setIsCardView] = useState(true);
 
-      const handleToggle = () => {
+      const handleSwitch = () => {
         setIsCardView((prevState) => !prevState);
       };
 
