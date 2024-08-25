@@ -1,4 +1,5 @@
 import React from 'react'
+import './DashboardSidebar.css'
 import Logo from '../../../assets/logo-removebg-preview.png'
 import DashboardIcon from '../../../assets/icons/dashboard-square-edit-stroke-rounded.svg'
 import ContestListIcon from '../../../assets/icons/task-01-stroke-rounded.svg'
