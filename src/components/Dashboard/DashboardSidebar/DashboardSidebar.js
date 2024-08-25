@@ -42,10 +42,10 @@ const DashboardSidebar = () => {
                 Setări
             </Link>
         </div>
-        <div className='position-absolute dashboard-profile'>
+        <div className='position-absolute w-100 d-flex flex-column justify-content-center dashboard-profile'>
             <img src={ProfilePicture} alt='Profile Image' width={60}/>
-            <h6 className='text-center'>User name</h6>
-            <span className='text-center text-secondary'>Email</span>
+            <h6>User name</h6>
+            <p className='text-secondary mb-0'>Email</p>
         </div>
     </div>
   )
