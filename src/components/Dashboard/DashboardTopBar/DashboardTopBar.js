@@ -91,13 +91,13 @@ const DashboardTopBar = () => {
       };
 
   return (
-    <div className='d-flex shadow p-4 rounded-4'>
+    <div className='d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5'>
         <div>
-        <Search className='m-0 text-white search-bar'>
+        <Search className='m-0 text-white search-bar bg-body-secondary rounded-circle'>
+              <StyledInputBase placeholder="Căutare..." inputProps={{ 'aria-label': 'search' }} />
               <SearchIconWrapper>
               <SearchIcon />
               </SearchIconWrapper>
-              <StyledInputBase placeholder="Căutare..." inputProps={{ 'aria-label': 'search' }} />
             </Search>
         </div>
         <div>
