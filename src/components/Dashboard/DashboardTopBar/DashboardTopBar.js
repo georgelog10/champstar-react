@@ -91,7 +91,7 @@ const DashboardTopBar = () => {
       };
 
   return (
-    <div className='d-flex'>
+    <div className='d-flex shadow p-4 rounded-4'>
         <div>
         <Search className='m-0 text-white search-bar'>
               <SearchIconWrapper>
