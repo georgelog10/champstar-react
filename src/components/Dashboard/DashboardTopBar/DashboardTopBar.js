@@ -92,7 +92,7 @@ const DashboardTopBar = () => {
 
   return (
     <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
-      <div>
+      <div className="d-flex gap-2">
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <StyledInputBase
             placeholder="Căutare..."
