@@ -36,7 +36,7 @@ const DashboardTopBar = () => {
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "black", // Set the text color to black
     "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 1),
+      padding: theme.spacing(1, 2, 1, 2),
       // paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
