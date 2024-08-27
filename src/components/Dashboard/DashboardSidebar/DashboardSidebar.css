@@ -2,6 +2,16 @@
     color: #000;
 }
 
+.sidebar-link.active {
+    background-color: #005686;
+    border-radius: 90px;
+    color: #fff;
+}
+
+.sidebar-link.active img {
+    filter: invert(1);
+}
+
 .dashboard-profile {
     bottom: 30px;
     left: 0;
