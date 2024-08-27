@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
-import { Button, InputBase } from "@mui/material";
+import { InputBase } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Dropdown } from "react-bootstrap";
 
 const DashboardTopBar = () => {
+  // Search Button
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -30,7 +31,7 @@ const DashboardTopBar = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: "#000"
+    color: "#000",
   }));
 
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -51,6 +52,7 @@ const DashboardTopBar = () => {
     },
   }));
 
+  // Mobile Search
   const MobileSearch = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -93,10 +95,44 @@ const DashboardTopBar = () => {
     },
   }));
 
-  const [isCardView, setIsCardView] = useState(true);
+  // Switch Toggle
+  const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
+    backgroundColor: "#f1f3f5", // Background color for the entire switch
+    borderRadius: theme.shape.borderRadius,
+    padding: "4px",
+    display: "flex",
+    alignItems: "center",
+    boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
+  }));
 
-  const handleSwitch = () => {
-    setIsCardView((prevState) => !prevState);
+  // Styled component for each ToggleButton
+  const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
+    textTransform: "none", // Ensure text remains normal case
+    borderRadius: theme.shape.borderRadius, // Match border radius for both buttons
+    border: "none", // Remove the default border
+    padding: "6px 16px", // Adjust padding
+    "&.Mui-selected": {
+      backgroundColor: "#0B132B", // Active background color
+      color: "#fff", // Active text color
+      "&:hover": {
+        backgroundColor: "#0B132B", // Hover effect on active button
+      },
+    },
+    "&:not(.Mui-selected)": {
+      backgroundColor: "transparent", // Inactive background color
+      color: "#000", // Inactive text color
+      "&:hover": {
+        backgroundColor: "rgba(0, 0, 0, 0.05)", // Hover effect on inactive button
+      },
+    },
+  }));
+
+  const [view, setView] = useState("card");
+
+  const handleViewChange = (event, newView) => {
+    if (newView !== null) {
+      setView(newView);
+    }
   };
 
   return (
@@ -146,7 +182,7 @@ const DashboardTopBar = () => {
         </Dropdown>
       </div>
       <div>
-        <div className="toggle-container">
+        {/* <div className="toggle-container">
           <label className="switch">
             <input
               type="checkbox"
@@ -156,7 +192,27 @@ const DashboardTopBar = () => {
             <span className="slider"></span>
           </label>
           <span>{isCardView ? "Card View" : "List View"}</span>
-        </div>
+        </div> */}
+        <StyledToggleButtonGroup
+          value={view}
+          exclusive
+          onChange={handleViewChange}
+          aria-label="view switch"
+        >
+          <StyledToggleButton value="card" aria-label="card view">
+            {/* Replace these spans with your custom icons if needed */}
+            <span role="img" aria-label="card">
+              📋
+            </span>{" "}
+            Card
+          </StyledToggleButton>
+          <StyledToggleButton value="list" aria-label="list view">
+            <span role="img" aria-label="list">
+              📋
+            </span>{" "}
+            List
+          </StyledToggleButton>
+        </StyledToggleButtonGroup>
       </div>
     </div>
   );
