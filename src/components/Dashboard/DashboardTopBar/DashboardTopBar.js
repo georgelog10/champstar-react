@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import { Button, InputBase } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import { Dropdown } from "react-bootstrap";
 
 const DashboardTopBar = () => {
   const Search = styled("div")(({ theme }) => ({
@@ -103,38 +104,38 @@ const DashboardTopBar = () => {
           </SearchIconWrapper>
         </Search>
         <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Oraș
-      </Dropdown.Toggle>
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Oraș
+          </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Domeniu
-      </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <Dropdown>
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Domeniu
+          </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Nr. participanți
-      </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <Dropdown>
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Nr. participanți
+          </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
       <div>
         <div className="toggle-container">
