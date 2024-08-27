@@ -68,6 +68,7 @@ const DashboardTopBar = () => {
     padding: theme.spacing(0, 2),
     height: "100%",
     position: "absolute",
+    right: 0,
     pointerEvents: "none",
     display: "flex",
     alignItems: "center",
@@ -78,7 +79,7 @@ const DashboardTopBar = () => {
     color: "inherit",
     "& .MuiInputBase-input": {
       padding: theme.spacing(1, 1, 1, 0),
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      // paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
       [theme.breakpoints.up("sm")]: {
@@ -100,13 +101,13 @@ const DashboardTopBar = () => {
     <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
       <div className="d-flex gap-2 align-items-center">
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
           <StyledInputBase
             placeholder="Căutare..."
             inputProps={{ "aria-label": "search" }}
           />
-          <SearchIconWrapper>
-            <SearchIcon />
-          </SearchIconWrapper>
         </Search>
         <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
