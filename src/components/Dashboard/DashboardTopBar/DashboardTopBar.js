@@ -25,17 +25,19 @@ const DashboardTopBar = () => {
     padding: theme.spacing(0, 2),
     height: "100%",
     position: "absolute",
+    right: 0,
     pointerEvents: "none",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    color: "#000"
   }));
 
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     color: "black", // Set the text color to black
     "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 0),
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      padding: theme.spacing(1, 1, 1, 1),
+      // paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
       color: "black", // Set the input text color to black
