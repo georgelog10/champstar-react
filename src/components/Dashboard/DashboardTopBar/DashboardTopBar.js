@@ -92,7 +92,7 @@ const DashboardTopBar = () => {
 
   return (
     <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
-      <div className="d-flex gap-2">
+      <div className="d-flex gap-2 align-items-center">
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <StyledInputBase
             placeholder="Căutare..."
@@ -109,7 +109,7 @@ const DashboardTopBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Dropdown button
+            Oraș
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li>
@@ -136,7 +136,7 @@ const DashboardTopBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Dropdown button
+            Domeniu
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li>
@@ -163,7 +163,7 @@ const DashboardTopBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Dropdown button
+            Nr. participanți
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li>
