@@ -147,7 +147,7 @@ const DashboardTopBar = () => {
           />
         </Search>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
             Oraș
           </Dropdown.Toggle>
 
