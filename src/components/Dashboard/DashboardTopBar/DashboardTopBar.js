@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import { InputBase, ToggleButton, ToggleButtonGroup } from "@mui/material";
-import SearchIcon from "../../../assets/icons/search-01-stroke-rounded.svg";
+import SearchIcon from "@mui/icons-material/Search";
 import { Dropdown } from "react-bootstrap";
 
 const DashboardTopBar = () => {
