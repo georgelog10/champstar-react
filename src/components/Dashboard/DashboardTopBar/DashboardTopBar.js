@@ -97,34 +97,29 @@ const DashboardTopBar = () => {
 
   // Switch Toggle
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
-    backgroundColor: "#f1f3f5", // Background color for the entire switch
-    borderRadius: theme.shape.borderRadius,
-    padding: "4px",
-    display: "flex",
-    alignItems: "center",
-    boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
+    display: 'flex',
+    backgroundColor: '#f0f2f5', // Background color for the toggle switch
+    borderRadius: '30px', // Rounded corners
+    padding: '5px',
   }));
-
-  // Styled component for each ToggleButton
+  
+  // Styled button equivalent to .toggle-button
   const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
-    textTransform: "none", // Ensure text remains normal case
-    borderRadius: theme.shape.borderRadius, // Match border radius for both buttons
-    border: "none", // Remove the default border
-    padding: "6px 16px", // Adjust padding
-    "&.Mui-selected": {
-      backgroundColor: "#0B132B", // Active background color
-      color: "#fff", // Active text color
-      "&:hover": {
-        backgroundColor: "#0B132B", // Hover effect on active button
-      },
+    border: 'none',
+    backgroundColor: 'transparent', // Default button background color
+    color: '#000', // Default button text color
+    fontSize: '16px',
+    padding: '10px 20px',
+    cursor: 'pointer',
+    borderRadius: '30px', // Rounded corners
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    '&.Mui-selected': {
+      backgroundColor: '#0d1117', // Active button background color
+      color: '#ffffff', // Active button text color
     },
-    "&:not(.Mui-selected)": {
-      backgroundColor: "transparent", // Inactive background color
-      color: "#000", // Inactive text color
-      "&:hover": {
-        backgroundColor: "rgba(0, 0, 0, 0.05)", // Hover effect on inactive button
-      },
-    },
+    transition: 'background-color 0.3s ease, color 0.3s ease', // Smooth transition for color changes
   }));
 
   const [view, setView] = useState("card");
