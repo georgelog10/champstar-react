@@ -3,6 +3,7 @@ import { styled, alpha } from "@mui/material/styles";
 import { InputBase, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Dropdown } from "react-bootstrap";
+import './DashboardTopBar.css'
 
 const DashboardTopBar = () => {
   // Search Button
