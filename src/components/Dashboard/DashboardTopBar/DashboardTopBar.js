@@ -158,7 +158,7 @@ const DashboardTopBar = () => {
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
             Domeniu
           </Dropdown.Toggle>
 
@@ -169,7 +169,7 @@ const DashboardTopBar = () => {
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
             Nr. participanți
           </Dropdown.Toggle>
 
