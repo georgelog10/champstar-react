@@ -150,7 +150,6 @@ const DashboardTopBar = () => {
           <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
             Oraș
           </Dropdown.Toggle>
-
           <Dropdown.Menu>
             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
@@ -161,7 +160,6 @@ const DashboardTopBar = () => {
           <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
             Domeniu
           </Dropdown.Toggle>
-
           <Dropdown.Menu>
             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
@@ -209,7 +207,7 @@ const DashboardTopBar = () => {
             <span role="img" aria-label="list">
               📋
             </span>{" "}
-            List
+            Listă
           </StyledToggleButton>
         </StyledToggleButtonGroup>
       </div>
