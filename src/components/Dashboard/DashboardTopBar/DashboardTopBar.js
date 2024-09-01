@@ -109,8 +109,8 @@ const DashboardTopBar = () => {
     border: "none",
     backgroundColor: "transparent", // Default button background color
     color: "#000", // Default button text color
-    fontSize: "14px",
-    padding: "10px 20px",
+    fontSize: "15px",
+    padding: "8px 20px",
     cursor: "pointer",
     fontFamily: "Onest",
     textTransform: "initial",
@@ -118,7 +118,7 @@ const DashboardTopBar = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    gap: "5px",
+    gap: "15px",
     "&.Mui-selected": {
       backgroundColor: "#005686", // Active button background color
       color: "#ffffff", // Active button text color
@@ -203,7 +203,7 @@ const DashboardTopBar = () => {
             className="view-style-button"
           >
             {/* Replace these spans with your custom icons if needed */}
-            <img src={CardIcon} alt="Card Icon" role="img" aria-label="card" />
+            <img src={CardIcon} alt="Card Icon" role="img" aria-label="card" width={20}/>
             Card
           </StyledToggleButton>
           <StyledToggleButton
@@ -211,7 +211,7 @@ const DashboardTopBar = () => {
             aria-label="list view"
             className="view-style-button"
           >
-            <img src={ListIcon} alt="List Icon" role="img" aria-label="card" />
+            <img src={ListIcon} alt="List Icon" role="img" aria-label="card" width={20}/>
             Listă
           </StyledToggleButton>
         </StyledToggleButtonGroup>
