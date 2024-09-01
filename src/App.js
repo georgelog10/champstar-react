@@ -4,7 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
+import ContestList from './pages/ContestList';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import UserProfile from './pages/UserProfile';
@@ -22,7 +22,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/contests' element={<ContestList />} />
           <Route path='/user' element={<UserProfile />} />
           <Route path='/settings' element={<Settings />} />
         </Routes>

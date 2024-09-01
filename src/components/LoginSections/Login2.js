@@ -21,7 +21,7 @@ const Login2 = () => {
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
-            navigate("/dashboard")
+            navigate("/contests")
             console.log(user);
         })
         .catch((error) => {
@@ -34,7 +34,7 @@ const Login2 = () => {
     const logGoogleUser = async () => {
       try {
         const response = await signInWithGooglePopup();
-        navigate("/dashboard");  // Redirect to dashboard on successful login
+        navigate("/contests");  // Redirect to dashboard on successful login
         console.log(response);
       } catch (error) {
         console.log(error);
