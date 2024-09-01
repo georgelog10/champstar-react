@@ -100,7 +100,6 @@ const DashboardTopBar = () => {
     display: 'flex',
     backgroundColor: '#f0f2f5', // Background color for the toggle switch
     borderRadius: '30px', // Rounded corners
-    padding: '5px',
   }));
   
   // Styled button equivalent to .toggle-button
@@ -116,7 +115,7 @@ const DashboardTopBar = () => {
     alignItems: 'center',
     justifyContent: 'center',
     '&.Mui-selected': {
-      backgroundColor: '#0d1117', // Active button background color
+      backgroundColor: '#005686', // Active button background color
       color: '#ffffff', // Active button text color
     },
     transition: 'background-color 0.3s ease, color 0.3s ease', // Smooth transition for color changes
