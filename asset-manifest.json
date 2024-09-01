@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/champstar-react/static/css/main.98d68aed.css",
-    "main.js": "/champstar-react/static/js/main.6a14dd9b.js",
+    "main.css": "/champstar-react/static/css/main.9e4da081.css",
+    "main.js": "/champstar-react/static/js/main.711f5609.js",
     "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
     "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
     "static/media/about.jpg": "/champstar-react/static/media/about.874b463a9e45c7159e97.jpg",
@@ -28,12 +28,12 @@
     "static/media/right-to-left-list-dash-stroke-rounded.svg": "/champstar-react/static/media/right-to-left-list-dash-stroke-rounded.c0dfc62c446fe44414be75dbcd09284d.svg",
     "static/media/user-stroke-rounded.svg": "/champstar-react/static/media/user-stroke-rounded.d6be273f3e3c1eaf5e4ca0a80e63292d.svg",
     "static/media/search-01-stroke-rounded.svg": "/champstar-react/static/media/search-01-stroke-rounded.7279066b25049a5d0a242e4d50ca487b.svg",
-    "main.98d68aed.css.map": "/champstar-react/static/css/main.98d68aed.css.map",
-    "main.6a14dd9b.js.map": "/champstar-react/static/js/main.6a14dd9b.js.map",
+    "main.9e4da081.css.map": "/champstar-react/static/css/main.9e4da081.css.map",
+    "main.711f5609.js.map": "/champstar-react/static/js/main.711f5609.js.map",
     "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d68aed.css",
-    "static/js/main.6a14dd9b.js"
+    "static/css/main.9e4da081.css",
+    "static/js/main.711f5609.js"
   ]
 }
