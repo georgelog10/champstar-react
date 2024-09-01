@@ -1,5 +1,10 @@
 .sidebar-link {
     color: #000;
+    transition: 0.3s;
+}
+
+.sidebar-link:hover {
+    background: #f0f2f5;
 }
 
 .sidebar-link.active {

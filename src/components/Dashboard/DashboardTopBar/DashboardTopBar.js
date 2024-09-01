@@ -109,13 +109,16 @@ const DashboardTopBar = () => {
     border: "none",
     backgroundColor: "transparent", // Default button background color
     color: "#000", // Default button text color
-    fontSize: "16px",
+    fontSize: "14px",
     padding: "10px 20px",
     cursor: "pointer",
+    fontFamily: "Onest",
+    textTransform: "initial",
     borderRadius: "30px", // Rounded corners
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    gap: "5px",
     "&.Mui-selected": {
       backgroundColor: "#005686", // Active button background color
       color: "#ffffff", // Active button text color
@@ -194,17 +197,21 @@ const DashboardTopBar = () => {
           onChange={handleViewChange}
           aria-label="view switch"
         >
-          <StyledToggleButton value="card" aria-label="card view">
+          <StyledToggleButton
+            value="card"
+            aria-label="card view"
+            className="view-style-button"
+          >
             {/* Replace these spans with your custom icons if needed */}
-            <span role="img" aria-label="card">
-              <img src={CardIcon} alt="Card Icon"/>
-            </span>{" "}
+            <img src={CardIcon} alt="Card Icon" role="img" aria-label="card" />
             Card
           </StyledToggleButton>
-          <StyledToggleButton value="list" aria-label="list view">
-            <span role="img" aria-label="list">
-              <img src={ListIcon} alt="List Icon"/>
-            </span>{" "}
+          <StyledToggleButton
+            value="list"
+            aria-label="list view"
+            className="view-style-button"
+          >
+            <img src={ListIcon} alt="List Icon" role="img" aria-label="card" />
             Listă
           </StyledToggleButton>
         </StyledToggleButtonGroup>
