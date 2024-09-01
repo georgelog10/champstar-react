@@ -37,7 +37,7 @@ const DashboardSidebar = () => {
                 <img src={ChatIcon} alt='Dashboard Icon'/>
                 Chat
             </Link>
-            <Link className={`d-flex align-items-center gap-2 px-3 py-2 sidebar-link`}>
+            <Link to="/settings" className={`d-flex align-items-center gap-2 px-3 py-2 sidebar-link`}>
                 <img src={SettingsIcon} alt='Dashboard Icon'/>
                 Setări
             </Link>
