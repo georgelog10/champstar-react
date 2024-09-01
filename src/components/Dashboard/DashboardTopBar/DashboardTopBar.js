@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import "./DashboardTopBar.css";
+import SearchIcon from "@mui/icons-material/Search";
+import CardIcon from "../../../assets/icons/cards-01-stroke-rounded.svg";
+import ListIcon from "../../../assets/icons/right-to-left-list-dash-stroke-rounded.svg";
 import { styled, alpha } from "@mui/material/styles";
 import { InputBase, ToggleButton, ToggleButtonGroup } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import { Dropdown } from "react-bootstrap";
-import './DashboardTopBar.css'
 
 const DashboardTopBar = () => {
   // Search Button
@@ -97,28 +99,28 @@ const DashboardTopBar = () => {
 
   // Switch Toggle
   const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
-    display: 'flex',
-    backgroundColor: '#f0f2f5', // Background color for the toggle switch
-    borderRadius: '30px', // Rounded corners
+    display: "flex",
+    backgroundColor: "#f0f2f5", // Background color for the toggle switch
+    borderRadius: "30px", // Rounded corners
   }));
-  
+
   // Styled button equivalent to .toggle-button
   const StyledToggleButton = styled(ToggleButton)(({ theme }) => ({
-    border: 'none',
-    backgroundColor: 'transparent', // Default button background color
-    color: '#000', // Default button text color
-    fontSize: '16px',
-    padding: '10px 20px',
-    cursor: 'pointer',
-    borderRadius: '30px', // Rounded corners
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    '&.Mui-selected': {
-      backgroundColor: '#005686', // Active button background color
-      color: '#ffffff', // Active button text color
+    border: "none",
+    backgroundColor: "transparent", // Default button background color
+    color: "#000", // Default button text color
+    fontSize: "16px",
+    padding: "10px 20px",
+    cursor: "pointer",
+    borderRadius: "30px", // Rounded corners
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    "&.Mui-selected": {
+      backgroundColor: "#005686", // Active button background color
+      color: "#ffffff", // Active button text color
     },
-    transition: 'background-color 0.3s ease, color 0.3s ease', // Smooth transition for color changes
+    transition: "background-color 0.3s ease, color 0.3s ease", // Smooth transition for color changes
   }));
 
   const [view, setView] = useState("card");
@@ -142,7 +144,11 @@ const DashboardTopBar = () => {
           />
         </Search>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="border-0 bg-transparent text-dark"
+          >
             Oraș
           </Dropdown.Toggle>
           <Dropdown.Menu>
@@ -152,7 +158,11 @@ const DashboardTopBar = () => {
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="border-0 bg-transparent text-dark"
+          >
             Domeniu
           </Dropdown.Toggle>
           <Dropdown.Menu>
@@ -162,7 +172,11 @@ const DashboardTopBar = () => {
           </Dropdown.Menu>
         </Dropdown>
         <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic" className="border-0 bg-transparent text-dark">
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="border-0 bg-transparent text-dark"
+          >
             Nr. participanți
           </Dropdown.Toggle>
 
@@ -174,17 +188,6 @@ const DashboardTopBar = () => {
         </Dropdown>
       </div>
       <div>
-        {/* <div className="toggle-container">
-          <label className="switch">
-            <input
-              type="checkbox"
-              checked={isCardView}
-              onChange={handleSwitch}
-            />
-            <span className="slider"></span>
-          </label>
-          <span>{isCardView ? "Card View" : "List View"}</span>
-        </div> */}
         <StyledToggleButtonGroup
           value={view}
           exclusive
@@ -194,13 +197,13 @@ const DashboardTopBar = () => {
           <StyledToggleButton value="card" aria-label="card view">
             {/* Replace these spans with your custom icons if needed */}
             <span role="img" aria-label="card">
-              📋
+              <img src={CardIcon} alt="Card Icon"/>
             </span>{" "}
             Card
           </StyledToggleButton>
           <StyledToggleButton value="list" aria-label="list view">
             <span role="img" aria-label="list">
-              📋
+              <img src={ListIcon} alt="List Icon"/>
             </span>{" "}
             Listă
           </StyledToggleButton>
