@@ -1,5 +1,6 @@
 .sidebar-link {
     color: #000;
+    border-radius: 90px;
     transition: 0.3s;
 }
 

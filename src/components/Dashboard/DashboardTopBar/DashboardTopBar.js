@@ -118,7 +118,7 @@ const DashboardTopBar = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    gap: "15px",
+    gap: "5px",
     "&.Mui-selected": {
       backgroundColor: "#005686", // Active button background color
       color: "#ffffff", // Active button text color
