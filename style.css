@@ -13,13 +13,12 @@ a {
 
 .login-sections,
 .register-sections,
-#dashboard,
+#contests,
 .posts-section {
     display: flex;
 }
 
-#dashboard {
-    padding: 20px;
+#contests {
     gap: 50px;
 }
 
