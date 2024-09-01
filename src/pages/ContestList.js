@@ -13,9 +13,8 @@ const Dashboard = () => {
 
   return (
     <>
-      {/* <DashboardNav /> */}
       <section id='contests'>
-        <div className='container-lg d-flex gap-5'>
+        <div className='container-lg d-flex gap-5 py-4'>
           <DashboardSidebar/>
           <div className='w-75 dashboard-content'>
             <DashboardTopBar/>
