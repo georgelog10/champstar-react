@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/champstar-react/static/css/main.98d68aed.css",
-    "main.js": "/champstar-react/static/js/main.6ecbcc28.js",
+    "main.js": "/champstar-react/static/js/main.6a14dd9b.js",
     "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
     "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
     "static/media/about.jpg": "/champstar-react/static/media/about.874b463a9e45c7159e97.jpg",
@@ -18,20 +18,22 @@
     "static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.png": "/champstar-react/static/media/Download_on_the_App_Store_Badge_RO_RGB_blk.4bd6cce3c2314782106e.png",
     "static/media/dashboard-square-edit-stroke-rounded.svg": "/champstar-react/static/media/dashboard-square-edit-stroke-rounded.bfe7d7a6d2d92fdebaaf63db5dcff15a.svg",
     "static/media/settings-02-stroke-rounded.svg": "/champstar-react/static/media/settings-02-stroke-rounded.a3b86b9fbc7748dbecd8a9e600f93289.svg",
+    "static/media/cards-01-stroke-rounded.svg": "/champstar-react/static/media/cards-01-stroke-rounded.49e90dc5406799640de8c55b443d4ccd.svg",
     "index.html": "/champstar-react/index.html",
     "static/media/task-01-stroke-rounded.svg": "/champstar-react/static/media/task-01-stroke-rounded.efd9db84560136f5f0838d860eddd3d3.svg",
     "static/media/bookmark-03-stroke-rounded.svg": "/champstar-react/static/media/bookmark-03-stroke-rounded.ba2f5a08b60130013f92a4e6275e2100.svg",
     "static/media/notification-02-stroke-rounded.svg": "/champstar-react/static/media/notification-02-stroke-rounded.e6cd7be24598b65a62cd2845fad32016.svg",
     "static/media/paint-board-stroke-rounded.svg": "/champstar-react/static/media/paint-board-stroke-rounded.205e37168ce97030f5ade777c1942e95.svg",
     "static/media/bubble-chat-stroke-rounded.svg": "/champstar-react/static/media/bubble-chat-stroke-rounded.a55cc299f6fabc3186274655c26acfdf.svg",
+    "static/media/right-to-left-list-dash-stroke-rounded.svg": "/champstar-react/static/media/right-to-left-list-dash-stroke-rounded.c0dfc62c446fe44414be75dbcd09284d.svg",
     "static/media/user-stroke-rounded.svg": "/champstar-react/static/media/user-stroke-rounded.d6be273f3e3c1eaf5e4ca0a80e63292d.svg",
     "static/media/search-01-stroke-rounded.svg": "/champstar-react/static/media/search-01-stroke-rounded.7279066b25049a5d0a242e4d50ca487b.svg",
     "main.98d68aed.css.map": "/champstar-react/static/css/main.98d68aed.css.map",
-    "main.6ecbcc28.js.map": "/champstar-react/static/js/main.6ecbcc28.js.map",
+    "main.6a14dd9b.js.map": "/champstar-react/static/js/main.6a14dd9b.js.map",
     "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98d68aed.css",
-    "static/js/main.6ecbcc28.js"
+    "static/js/main.6a14dd9b.js"
   ]
 }
