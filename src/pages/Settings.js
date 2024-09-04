@@ -115,7 +115,7 @@ const Settings = () => {
                 <h4 className="fw-bolder mb-0">Setări</h4>
               </div>
               <div className="d-flex flex-column gap-3 pt-3">
-                <Link
+                {/* <Link
                   className={`d-flex align-items-center gap-1 ${
                     currentSection === "Profile" ? "active" : ""
                   }`}
@@ -150,7 +150,7 @@ const Settings = () => {
                 >
                   <img src={SettingsNotifications} alt="Profile Icon" />
                   Notificări
-                </Link>
+                </Link> */}
 
                 <ToggleButtonGroup
                   type="radio"
