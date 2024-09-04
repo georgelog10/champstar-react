@@ -109,63 +109,65 @@ const Settings = () => {
     <>
       <div className="pt-4 settings-page">
         <div className="container-lg d-flex gap-5">
-            <DashboardSidebar/>
-          <nav className="shadow-lg w-25 rounded-4 p-4">
-            <div className="d-flex justify-content-between align-items-center border-bottom pb-3">
-              <h4 className="fw-bolder mb-0">Setări</h4>
-              <img src={SettingsSearch} alt="Profile Icon" />
-            </div>
-            <div className="d-flex flex-column gap-3 pt-3">
-              <Link
-                className={`d-flex align-items-center gap-1 ${
-                  currentSection === "Profile" ? "active" : ""
-                }`}
-                onClick={() => setCurrentSection("Profile")}
-              >
-                <img src={SettingsProfile} alt="Profile Icon" />
-                Profil
-              </Link>
-              <Link
-                className={`d-flex align-items-center gap-1 ${
-                  currentSection === "Account" ? "active" : ""
-                }`}
-                onClick={() => setCurrentSection("Account")}
-              >
-                <img src={SettingsAccount} alt="Profile Icon" />
-                Cont
-              </Link>
-              <Link
-                className={`d-flex align-items-center gap-1 ${
-                  currentSection === "Appearance" ? "active" : ""
-                }`}
-                onClick={() => setCurrentSection("Appearance")}
-              >
-                <img src={SettingsAppeareance} alt="Profile Icon" />
-                Aspect
-              </Link>
-              <Link
-                className={`d-flex align-items-center gap-1 ${
-                  currentSection === "Notifications" ? "active" : ""
-                }`}
-                onClick={() => setCurrentSection("Notifications")}
-              >
-                <img src={SettingsNotifications} alt="Profile Icon" />
-                Notificări
-              </Link>
-            </div>
-          </nav>
-          <form
-            className="w-75"
-            onSubmit={(e) => {
-              e.preventDefault();
-              console.log("Profile:", profile);
-              console.log("Account:", account);
-              console.log("Appearance:", appearance);
-              console.log("Notifications:", notifications);
-            }}
-          >
-            {renderSection()}
-          </form>
+          <DashboardSidebar />
+          <div className="w-100 flex-column">
+            <nav className="shadow-lg w-25 rounded-4 p-4">
+              <div className="d-flex justify-content-between align-items-center border-bottom pb-3">
+                <h4 className="fw-bolder mb-0">Setări</h4>
+                <img src={SettingsSearch} alt="Profile Icon" />
+              </div>
+              <div className="d-flex flex-column gap-3 pt-3">
+                <Link
+                  className={`d-flex align-items-center gap-1 ${
+                    currentSection === "Profile" ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentSection("Profile")}
+                >
+                  <img src={SettingsProfile} alt="Profile Icon" />
+                  Profil
+                </Link>
+                <Link
+                  className={`d-flex align-items-center gap-1 ${
+                    currentSection === "Account" ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentSection("Account")}
+                >
+                  <img src={SettingsAccount} alt="Profile Icon" />
+                  Cont
+                </Link>
+                <Link
+                  className={`d-flex align-items-center gap-1 ${
+                    currentSection === "Appearance" ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentSection("Appearance")}
+                >
+                  <img src={SettingsAppeareance} alt="Profile Icon" />
+                  Aspect
+                </Link>
+                <Link
+                  className={`d-flex align-items-center gap-1 ${
+                    currentSection === "Notifications" ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentSection("Notifications")}
+                >
+                  <img src={SettingsNotifications} alt="Profile Icon" />
+                  Notificări
+                </Link>
+              </div>
+            </nav>
+            <form
+              className="w-75"
+              onSubmit={(e) => {
+                e.preventDefault();
+                console.log("Profile:", profile);
+                console.log("Account:", account);
+                console.log("Appearance:", appearance);
+                console.log("Notifications:", notifications);
+              }}
+            >
+              {renderSection()}
+            </form>
+          </div>
         </div>
       </div>
     </>
