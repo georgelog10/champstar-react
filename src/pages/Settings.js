@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DashboardNav from "../components/Dashboard/DashboardNav/DashboardNav";
 import ProfileSettings from "./settings/ProfileSettings";
 import AccountSettings from "./settings/AccountSettings";
 import AppeareanceSettings from "./settings/AppeareanceSettings";
@@ -9,8 +8,8 @@ import SettingsProfile from "../assets/icons/user-stroke-rounded.svg";
 import SettingsAccount from "../assets/icons/settings-02-stroke-rounded.svg";
 import SettingsAppeareance from "../assets/icons/paint-board-stroke-rounded.svg";
 import SettingsNotifications from "../assets/icons/notification-02-stroke-rounded.svg";
-import SettingsSearch from "../assets/icons/search-01-stroke-rounded.svg";
 import DashboardSidebar from "../components/Dashboard/DashboardSidebar/DashboardSidebar";
+import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap'; // or your preferred UI library
 
 const Settings = () => {
   const [currentSection, setCurrentSection] = useState("Profile");
@@ -111,10 +110,9 @@ const Settings = () => {
         <div className="container-lg d-flex gap-5">
           <DashboardSidebar />
           <div className="w-100 flex-column">
-            <nav className="shadow-lg w-25 rounded-4 p-4">
+            <div className="shadow-lg rounded-4 mb-4 p-4">
               <div className="d-flex justify-content-between align-items-center border-bottom pb-3">
                 <h4 className="fw-bolder mb-0">Setări</h4>
-                <img src={SettingsSearch} alt="Profile Icon" />
               </div>
               <div className="d-flex flex-column gap-3 pt-3">
                 <Link
@@ -153,10 +151,69 @@ const Settings = () => {
                   <img src={SettingsNotifications} alt="Profile Icon" />
                   Notificări
                 </Link>
+
+                <ToggleButtonGroup
+                  type="radio"
+                  name="options"
+                  value={currentSection}
+                  onChange={(val) => setCurrentSection(val)}
+                  className="d-flex gap-2"
+                >
+                  <ToggleButton
+                    className="d-flex align-items-center gap-1"
+                    value="Profile"
+                    variant={
+                      currentSection === "Profile"
+                        ? "primary"
+                        : "outline-secondary"
+                    }
+                  >
+                    <img src={SettingsProfile} alt="Profile Icon" />
+                    Profil
+                  </ToggleButton>
+
+                  <ToggleButton
+                    className="d-flex align-items-center gap-1"
+                    value="Account"
+                    variant={
+                      currentSection === "Account"
+                        ? "primary"
+                        : "outline-secondary"
+                    }
+                  >
+                    <img src={SettingsAccount} alt="Account Icon" />
+                    Cont
+                  </ToggleButton>
+
+                  <ToggleButton
+                    className="d-flex align-items-center gap-1"
+                    value="Appearance"
+                    variant={
+                      currentSection === "Appearance"
+                        ? "primary"
+                        : "outline-secondary"
+                    }
+                  >
+                    <img src={SettingsAppeareance} alt="Appearance Icon" />
+                    Aspect
+                  </ToggleButton>
+
+                  <ToggleButton
+                    className="d-flex align-items-center gap-1"
+                    value="Notifications"
+                    variant={
+                      currentSection === "Notifications"
+                        ? "primary"
+                        : "outline-secondary"
+                    }
+                  >
+                    <img src={SettingsNotifications} alt="Notifications Icon" />
+                    Notificări
+                  </ToggleButton>
+                </ToggleButtonGroup>
               </div>
-            </nav>
+            </div>
             <form
-              className="w-75"
               onSubmit={(e) => {
                 e.preventDefault();
                 console.log("Profile:", profile);
