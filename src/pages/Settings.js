@@ -114,9 +114,9 @@ const Settings = () => {
               <div className="d-flex justify-content-between align-items-center border-bottom pb-3">
                 <h4 className="fw-bolder mb-0">Setări</h4>
               </div>
-              <div className="d-flex flex-column gap-3 pt-3">
+              <div className="d-flex justify-content-between pt-3">
                 <Link
-                  className={`d-flex align-items-center gap-1 ${
+                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
                     currentSection === "Profile" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Profile")}
@@ -125,7 +125,7 @@ const Settings = () => {
                   Profil
                 </Link>
                 <Link
-                  className={`d-flex align-items-center gap-1 ${
+                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
                     currentSection === "Account" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Account")}
@@ -134,7 +134,7 @@ const Settings = () => {
                   Cont
                 </Link>
                 <Link
-                  className={`d-flex align-items-center gap-1 ${
+                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
                     currentSection === "Appearance" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Appearance")}
@@ -143,7 +143,7 @@ const Settings = () => {
                   Aspect
                 </Link>
                 <Link
-                  className={`d-flex align-items-center gap-1 ${
+                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
                     currentSection === "Notifications" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Notifications")}
