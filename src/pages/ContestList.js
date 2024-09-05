@@ -15,6 +15,10 @@ import DashboardTopBar from '../components/Dashboard/DashboardTopBar/DashboardTo
 const Dashboard = () => {
   const [value, setValue] = React.useState(0);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  
   return (
     <>
       <section id='contests'>
