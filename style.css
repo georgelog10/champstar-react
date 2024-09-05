@@ -94,6 +94,10 @@ a {
     filter: invert(1);
 }
 
+.save-button {
+    background-color: #005686;
+}
+
 @media (min-width: 1024px) {
     #mobile-app-bar {
         display: none;
