@@ -115,7 +115,7 @@ const Settings = () => {
                 <h4 className="fw-bolder mb-0">Setări</h4>
               </div>
               <div className="d-flex flex-column gap-3 pt-3">
-                {/* <Link
+                <Link
                   className={`d-flex align-items-center gap-1 ${
                     currentSection === "Profile" ? "active" : ""
                   }`}
@@ -150,104 +150,7 @@ const Settings = () => {
                 >
                   <img src={SettingsNotifications} alt="Profile Icon" />
                   Notificări
-                </Link> */}
-
-                <ToggleButtonGroup
-                  type="radio"
-                  name="options"
-                  value={currentSection}
-                  onChange={(val) => setCurrentSection(val)}
-                  className="d-flex gap-2"
-                >
-                  <ToggleButton
-                    className="d-flex align-items-center gap-1"
-                    value="Profile"
-                    variant={
-                      currentSection === "Profile"
-                        ? "primary"
-                        : "outline-secondary"
-                    }
-                  >
-                    <img src={SettingsProfile} alt="Profile Icon" />
-                    Profil
-                  </ToggleButton>
-
-                  <ToggleButton
-                    className="d-flex align-items-center gap-1"
-                    value="Account"
-                    variant={
-                      currentSection === "Account"
-                        ? "primary"
-                        : "outline-secondary"
-                    }
-                  >
-                    <img src={SettingsAccount} alt="Account Icon" />
-                    Cont
-                  </ToggleButton>
-
-                  <ToggleButton
-                    className="d-flex align-items-center gap-1"
-                    value="Appearance"
-                    variant={
-                      currentSection === "Appearance"
-                        ? "primary"
-                        : "outline-secondary"
-                    }
-                  >
-                    <img src={SettingsAppeareance} alt="Appearance Icon" />
-                    Aspect
-                  </ToggleButton>
-
-                  <ToggleButton
-                    className="d-flex align-items-center gap-1"
-                    value="Notifications"
-                    variant={
-                      currentSection === "Notifications"
-                        ? "primary"
-                        : "outline-secondary"
-                    }
-                  >
-                    <img src={SettingsNotifications} alt="Notifications Icon" />
-                    Notificări
-                  </ToggleButton>
-                </ToggleButtonGroup>
-
-                <StyledToggleButtonGroup
-                  value={currentSection}
-                  exclusive
-                  onChange={handleViewChange}
-                  aria-label="view switch"
-                >
-                  <StyledToggleButton
-                    value="card"
-                    aria-label="card view"
-                    className="view-style-button"
-                  >
-                    {/* Replace these spans with your custom icons if needed */}
-                    <img
-                      src={CardIcon}
-                      alt="Card Icon"
-                      role="img"
-                      aria-label="card"
-                      width={20}
-                    />
-                    Card
-                  </StyledToggleButton>
-                  <StyledToggleButton
-                    value="list"
-                    aria-label="list view"
-                    className="view-style-button"
-                  >
-                    <img
-                      src={ListIcon}
-                      alt="List Icon"
-                      role="img"
-                      aria-label="card"
-                      width={20}
-                    />
-                    Listă
-                  </StyledToggleButton>
-                </StyledToggleButtonGroup>
+                </Link> 
               </div>
             </div>
             <form
