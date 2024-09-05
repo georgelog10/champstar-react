@@ -89,14 +89,16 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
       </div>
       <div>
         <label for="about_me" className="form-label">Despre mine</label>
-          <input
-            type="textarea"
+          <textarea
             name="about_me"
             id="about_me"
             className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.about_me}
             onChange={handleProfileChange}
           />
+      </div>
+      <div>
+        <input type="submit" className="rounded-2 py-2 px-3 save-button" value="Salvează"/>
       </div>
     </div>
   );
