@@ -116,7 +116,7 @@ const Settings = () => {
               </div>
               <div className="d-flex justify-content-between pt-3">
                 <Link
-                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
+                  className={`d-flex justify-content-center align-items-center gap-2 w-25 py-2 settings-button ${
                     currentSection === "Profile" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Profile")}
@@ -125,7 +125,7 @@ const Settings = () => {
                   Profil
                 </Link>
                 <Link
-                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
+                  className={`d-flex justify-content-center align-items-center gap-2 w-25 py-2 settings-button ${
                     currentSection === "Account" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Account")}
@@ -134,7 +134,7 @@ const Settings = () => {
                   Cont
                 </Link>
                 <Link
-                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
+                  className={`d-flex justify-content-center align-items-center gap-2 w-25 py-2 settings-button ${
                     currentSection === "Appearance" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Appearance")}
@@ -143,7 +143,7 @@ const Settings = () => {
                   Aspect
                 </Link>
                 <Link
-                  className={`d-flex justify-content-center align-items-center gap-1 w-25 ${
+                  className={`d-flex justify-content-center align-items-center gap-2 w-25 py-2 settings-button ${
                     currentSection === "Notifications" ? "active" : ""
                   }`}
                   onClick={() => setCurrentSection("Notifications")}

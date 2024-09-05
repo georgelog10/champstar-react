@@ -75,6 +75,25 @@ a {
     bottom: 0;
 }
 
+.settings-button {
+    border-radius: 90px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.settings-button:hover {
+    background-color: #f0f2f5;
+}
+
+.settings-button.active {
+    color: #fff;
+    background: #005686;
+}
+
+.settings-button.active img {
+    filter: invert(1);
+}
+
 @media (min-width: 1024px) {
     #mobile-app-bar {
         display: none;
