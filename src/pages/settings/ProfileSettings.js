@@ -69,7 +69,7 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
             onChange={handleProfileChange}
           />
       </div>
-      <div>
+      <div className="mb-3">
         <label for="birthdate" className="form-label">Data nașterii</label>
           <input
             type="date"
@@ -80,14 +80,14 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
             onChange={handleProfileChange}
           />
       </div>
-      <div>
+      <div className="mb-3">
         <label for="gender" className="form-label">Gen</label>
           <select id="gender" name="gender" className="form-control border border-2 border-dark-subtle p-2 rounded-2">
             <option value="male">Barbat</option>
             <option value="female">Femeie</option>
           </select>
       </div>
-      <div>
+      <div className="mb-3">
         <label for="about_me" className="form-label">Despre mine</label>
           <textarea
             name="about_me"
@@ -97,8 +97,8 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
             onChange={handleProfileChange}
           />
       </div>
-      <div>
-        <input type="submit" className="rounded-2 py-2 px-3 save-button" value="Salvează"/>
+      <div className="d-flex justify-content-end mb-3">
+        <input type="submit" className="rounded-2 py-2 px-3 text-white border-0 save-button" value="Salvează"/>
       </div>
     </div>
   );
