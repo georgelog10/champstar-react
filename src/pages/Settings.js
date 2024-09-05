@@ -9,7 +9,7 @@ import SettingsAccount from "../assets/icons/settings-02-stroke-rounded.svg";
 import SettingsAppeareance from "../assets/icons/paint-board-stroke-rounded.svg";
 import SettingsNotifications from "../assets/icons/notification-02-stroke-rounded.svg";
 import DashboardSidebar from "../components/Dashboard/DashboardSidebar/DashboardSidebar";
-import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap'; // or your preferred UI library
+import { ToggleButton, ToggleButtonGroup } from "react-bootstrap"; // or your preferred UI library
 
 const Settings = () => {
   const [currentSection, setCurrentSection] = useState("Profile");
@@ -211,6 +211,43 @@ const Settings = () => {
                     Notificări
                   </ToggleButton>
                 </ToggleButtonGroup>
+
+                <StyledToggleButtonGroup
+                  value={currentSection}
+                  exclusive
+                  onChange={handleViewChange}
+                  aria-label="view switch"
+                >
+                  <StyledToggleButton
+                    value="card"
+                    aria-label="card view"
+                    className="view-style-button"
+                  >
+                    {/* Replace these spans with your custom icons if needed */}
+                    <img
+                      src={CardIcon}
+                      alt="Card Icon"
+                      role="img"
+                      aria-label="card"
+                      width={20}
+                    />
+                    Card
+                  </StyledToggleButton>
+                  <StyledToggleButton
+                    value="list"
+                    aria-label="list view"
+                    className="view-style-button"
+                  >
+                    <img
+                      src={ListIcon}
+                      alt="List Icon"
+                      role="img"
+                      aria-label="card"
+                      width={20}
+                    />
+                    Listă
+                  </StyledToggleButton>
+                </StyledToggleButtonGroup>
               </div>
             </div>
             <form
