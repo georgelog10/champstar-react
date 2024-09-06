@@ -1,12 +1,11 @@
 import React from "react";
-import DashboardNav from "../components/Dashboard/DashboardNav/DashboardNav";
-import DashboardFilter from "../components/Dashboard/DashboardFilter/DashboardFilter";
-import DashboardCards from "../components/Dashboard/DashboardCards/DashboardCards";
-import { BottomNavigation, BottomNavigationAction, Box } from "@mui/material";
-import HomeIcon from '@mui/icons-material/Home';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DashboardSidebar from "../components/Dashboard/DashboardSidebar/DashboardSidebar";
 import DashboardTopBar from "../components/Dashboard/DashboardTopBar/DashboardTopBar";
+import DashboardCards from "../components/Dashboard/DashboardCards/DashboardCards";
+import { BottomNavigation, BottomNavigationAction, Box } from "@mui/material";
+// import HomeIcon from '@mui/icons-material/Home';
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import DashboardIcon from "../assets/icons/dashboard-square-edit-stroke-rounded.svg";
 
 const Dashboard = () => {
   const [value, setValue] = React.useState(0);
@@ -35,8 +34,7 @@ const Dashboard = () => {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction icon={<HomeIcon />} />
-            <BottomNavigationAction icon={<AccountCircleIcon />} />
+            <BottomNavigationAction icon={<DashboardIcon />} />
           </BottomNavigation>
         </Box>
       </section>
