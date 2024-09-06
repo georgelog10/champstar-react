@@ -34,7 +34,7 @@ const Dashboard = () => {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction icon={<DashboardIcon />} />
+            <BottomNavigationAction icon={<img src={DashboardIcon} alt="dashboard" style={{ width: 24, height: 24 }} />} />
           </BottomNavigation>
         </Box>
       </section>
