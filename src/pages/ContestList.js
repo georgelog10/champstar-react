@@ -30,7 +30,7 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-      {/* <section id="mobile-app-bar">
+      <section id="mobile-app-bar">
       <Box sx={{ width: '100vw' }}>
       <BottomNavigation
         showLabels
@@ -43,25 +43,7 @@ const Dashboard = () => {
         <BottomNavigationAction icon={<AccountCircleIcon />} />
       </BottomNavigation>
     </Box>
-    </section> */}
-    <BottomNavigation sx={{ width: 500 }} value={value} onChange={handleChange}>
-      <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<RestoreIcon />}
-      />
-      <BottomNavigationAction
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon />}
-      />
-      <BottomNavigationAction
-        label="Nearby"
-        value="nearby"
-        icon={<LocationOnIcon />}
-      />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
-    </BottomNavigation>
+    </section>
   </>
   )
 }
