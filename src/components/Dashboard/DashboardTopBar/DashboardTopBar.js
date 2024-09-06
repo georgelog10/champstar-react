@@ -135,7 +135,7 @@ const DashboardTopBar = () => {
   };
 
   return (
-    <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
+    <div className="d-none d-lg-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
       <div className="d-flex gap-2 align-items-center">
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <SearchIconWrapper>
