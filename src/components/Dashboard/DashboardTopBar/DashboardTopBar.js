@@ -135,7 +135,7 @@ const DashboardTopBar = () => {
   };
 
   return (
-    <div className="d-none d-lg-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
+    <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
       <div className="d-flex gap-2 align-items-center">
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <SearchIconWrapper>
@@ -146,7 +146,7 @@ const DashboardTopBar = () => {
             inputProps={{ "aria-label": "search" }}
           />
         </Search>
-        <Dropdown>
+        <Dropdown className="d-none d-lg-block">
           <Dropdown.Toggle
             variant="success"
             id="dropdown-basic"
@@ -160,7 +160,7 @@ const DashboardTopBar = () => {
             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Dropdown>
+        <Dropdown className="d-none d-lg-block">
           <Dropdown.Toggle
             variant="success"
             id="dropdown-basic"
@@ -174,7 +174,7 @@ const DashboardTopBar = () => {
             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Dropdown>
+        <Dropdown className="d-none d-lg-block">
           <Dropdown.Toggle
             variant="success"
             id="dropdown-basic"
