@@ -190,7 +190,7 @@ const DashboardTopBar = () => {
           </Dropdown.Menu>
         </Dropdown>
       </div>
-      <div>
+      <div className="d-none d-lg-block">
         <StyledToggleButtonGroup
           value={view}
           exclusive
