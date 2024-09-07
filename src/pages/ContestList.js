@@ -45,7 +45,6 @@ const Dashboard = () => {
             <BottomNavigationAction icon={<img src={NotificationsIcon} alt="notifications" style={{ width: 24, height: 24 }} />} />
             <BottomNavigationAction icon={<img src={ChatIcon} alt="chat" style={{ width: 24, height: 24 }} />} />
             <BottomNavigationAction icon={<img src={SettingsIcon} alt="settings" style={{ width: 24, height: 24 }} />} />
-
           </BottomNavigation>
         </Box>
       </section>

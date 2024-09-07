@@ -92,6 +92,7 @@ const ProfileSettings = ({ profile, handleProfileChange }) => {
           <textarea
             name="about_me"
             id="about_me"
+            cols={10}
             className="form-control border border-2 border-dark-subtle p-2 rounded-2"
             value={profile.about_me}
             onChange={handleProfileChange}
