@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -13,7 +13,7 @@ import Settings from './pages/Settings';
 function App() {
   return (
     <div>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route index element={<Home />} />
           <Route path='/despre-noi' element={<About />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path='/user' element={<UserProfile />} />
           <Route path='/settings' element={<Settings />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
