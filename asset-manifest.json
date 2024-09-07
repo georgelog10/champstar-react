@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/champstar-react/static/css/main.f8a26978.css",
-    "main.js": "/champstar-react/static/js/main.7c806cb0.js",
+    "main.js": "/champstar-react/static/js/main.f56686a2.js",
     "static/js/787.87c8eaef.chunk.js": "/champstar-react/static/js/787.87c8eaef.chunk.js",
     "static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.png": "/champstar-react/static/media/giordano-rossoni-LqBCBH7b1k8-unsplash.14cd0fa69c10dd45431a.png",
     "static/media/about.jpg": "/champstar-react/static/media/about.874b463a9e45c7159e97.jpg",
@@ -22,17 +22,19 @@
     "index.html": "/champstar-react/index.html",
     "static/media/task-01-stroke-rounded.svg": "/champstar-react/static/media/task-01-stroke-rounded.efd9db84560136f5f0838d860eddd3d3.svg",
     "static/media/bookmark-03-stroke-rounded.svg": "/champstar-react/static/media/bookmark-03-stroke-rounded.ba2f5a08b60130013f92a4e6275e2100.svg",
+    "static/media/filter-stroke-rounded.svg": "/champstar-react/static/media/filter-stroke-rounded.e36f9041459c200994f2a622d3335b98.svg",
     "static/media/notification-02-stroke-rounded.svg": "/champstar-react/static/media/notification-02-stroke-rounded.e6cd7be24598b65a62cd2845fad32016.svg",
     "static/media/paint-board-stroke-rounded.svg": "/champstar-react/static/media/paint-board-stroke-rounded.205e37168ce97030f5ade777c1942e95.svg",
     "static/media/bubble-chat-stroke-rounded.svg": "/champstar-react/static/media/bubble-chat-stroke-rounded.a55cc299f6fabc3186274655c26acfdf.svg",
     "static/media/right-to-left-list-dash-stroke-rounded.svg": "/champstar-react/static/media/right-to-left-list-dash-stroke-rounded.c0dfc62c446fe44414be75dbcd09284d.svg",
     "static/media/user-stroke-rounded.svg": "/champstar-react/static/media/user-stroke-rounded.d6be273f3e3c1eaf5e4ca0a80e63292d.svg",
+    "static/media/user-circle-stroke-rounded.svg": "/champstar-react/static/media/user-circle-stroke-rounded.a33ef936cf9e9ed9dd54ea5f3b594a2e.svg",
     "main.f8a26978.css.map": "/champstar-react/static/css/main.f8a26978.css.map",
-    "main.7c806cb0.js.map": "/champstar-react/static/js/main.7c806cb0.js.map",
+    "main.f56686a2.js.map": "/champstar-react/static/js/main.f56686a2.js.map",
     "787.87c8eaef.chunk.js.map": "/champstar-react/static/js/787.87c8eaef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8a26978.css",
-    "static/js/main.7c806cb0.js"
+    "static/js/main.f56686a2.js"
   ]
 }
