@@ -24,7 +24,7 @@ const Dashboard = () => {
       <section id="contests">
         <div className="container-lg d-flex gap-5 py-4">
           <DashboardSidebar />
-          <div className="w-75 dashboard-content">
+          <div className="w-100 w-lg-75 dashboard-content">
             <DashboardTopBar />
             <DashboardCards />
           </div>
