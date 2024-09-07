@@ -3,9 +3,12 @@ import "./DashboardTopBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import CardIcon from "../../../assets/icons/cards-01-stroke-rounded.svg";
 import ListIcon from "../../../assets/icons/right-to-left-list-dash-stroke-rounded.svg";
+import UserIcon from "../../../assets/icons/user-circle-stroke-rounded.svg";
+import FilterIcon from "../../../assets/icons/filter-stroke-rounded.svg";
 import { styled, alpha } from "@mui/material/styles";
 import { InputBase, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { Dropdown } from "react-bootstrap";
+import { Filter } from "@mui/icons-material";
 
 const DashboardTopBar = () => {
   // Search Button
@@ -137,6 +140,7 @@ const DashboardTopBar = () => {
   return (
     <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
       <div className="d-flex gap-2 align-items-center">
+        <img src={UserIcon} alt="mobile-user" className="d-block d-lg-none"/>
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <SearchIconWrapper>
             <SearchIcon />
@@ -146,6 +150,7 @@ const DashboardTopBar = () => {
             inputProps={{ "aria-label": "search" }}
           />
         </Search>
+        <img src={FilterIcon} alt="mobile-filter"/>
         <Dropdown className="d-none d-lg-block">
           <Dropdown.Toggle
             variant="success"
