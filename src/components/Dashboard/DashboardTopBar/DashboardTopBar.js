@@ -139,8 +139,8 @@ const DashboardTopBar = () => {
 
   return (
     <div className="d-flex shadow px-4 py-3 rounded-4 justify-content-between mb-5">
-      <div className="d-flex gap-2 align-items-center">
-        <img src={UserIcon} alt="mobile-user" className="d-block d-lg-none"/>
+      <div className="d-flex gap-2 align-items-center w-100">
+        <img src={UserIcon} alt="mobile-user" className="d-block d-lg-none" width={24} height={24}/>
         <Search className="m-0 text-white search-bar bg-body-secondary rounded-pill">
           <SearchIconWrapper>
             <SearchIcon />
@@ -150,7 +150,7 @@ const DashboardTopBar = () => {
             inputProps={{ "aria-label": "search" }}
           />
         </Search>
-        <img src={FilterIcon} alt="mobile-filter"/>
+        <img src={FilterIcon} alt="mobile-filter" className="d-block d-lg-none" width={24} height={24}/>
         <Dropdown className="d-none d-lg-block">
           <Dropdown.Toggle
             variant="success"
